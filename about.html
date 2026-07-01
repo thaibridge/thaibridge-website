@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — ThaiBridge</title>
+<meta name="description" content="ThaiBridge is a bilingual operations team based in Bangkok, bridging Chinese brands with the Thai market. Not consultants — operators.">
+<meta property="og:title" content="About — ThaiBridge">
+<meta property="og:description" content="We're a bilingual team in Bangkok. We understand Chinese business culture because we come from it. We understand Thailand because we live in it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thaibridge.asia/about">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — ThaiBridge">
+<meta name="twitter:description" content="A bilingual operations team based in Bangkok. Real execution, long-term partnership.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#040810;--bg2:#060C1A;--sf:#0A1124;--sf2:#0E162E;
+    --br:rgba(255,255,255,.04);--br2:rgba(255,255,255,.07);
+    --t1:#EEF1F7;--t2:#8E97AE;--t3:#4E5668;
+    --g:#C8A951;--gd:rgba(200,169,81,.06);--gm:rgba(200,169,81,.12);
+    --bl:#3B82F6;
+    --r:12px;--rl:20px;--e:cubic-bezier(.22,.61,.36,1);
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--t1);line-height:1.6;-webkit-font-smoothing:antialiased;font-weight:400;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+
+  .amb{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .amb-o{position:absolute;border-radius:50%;filter:blur(200px)}
+  .amb-o.a{width:960px;height:960px;background:radial-gradient(circle,rgba(59,130,246,.05),transparent 70%);top:-440px;right:-300px}
+  .amb-o.b{width:720px;height:720px;background:radial-gradient(circle,rgba(200,169,81,.022),transparent 70%);bottom:-340px;left:-280px}
+  .amb-g{position:absolute;inset:0;opacity:.012;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:80px 80px}
+  .amb-n{position:absolute;inset:0;opacity:.015;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;width:min(94%,1080px);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 24px;background:rgba(10,18,36,.70);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--br);border-radius:16px;transition:all .4s}
+  .nav.sc{background:rgba(10,18,36,.93);border-color:var(--br2);box-shadow:0 4px 60px rgba(0,0,0,.45)}
+  .nav-b{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px}
+  .nav-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#040810}
+  .nav-l{display:flex;align-items:center;gap:4px}
+  .nav-l a{font-size:14px;font-weight:500;color:var(--t2);padding:8px 16px;border-radius:8px;transition:all .2s}
+  .nav-l a:hover,.nav-l a.active{color:var(--t1);background:rgba(255,255,255,.03)}
+  .nav-l a.active{background:rgba(255,255,255,.05)}
+  .nav-cta{margin-left:12px;padding:9px 20px;font-size:14px;font-weight:600;color:#040810!important;background:var(--g);border-radius:10px;transition:all .25s}
+  .nav-cta:hover{background:#D4B85E!important;box-shadow:0 0 32px rgba(200,169,81,.16);transform:translateY(-1px)}
+
+  .sec{position:relative;z-index:1;padding:128px 8%}
+  .sec-alt{background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
+  .ctr{max-width:1080px;margin:0 auto}
+  .sec-hd{margin-bottom:80px;text-align:center}
+  .sec-k{font-size:11.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:18px}
+  .sec-t{font-size:clamp(32px,4vw,48px);font-weight:700;letter-spacing:-1px;line-height:1.11;margin-bottom:20px}
+  .sec-s{max-width:520px;margin:0 auto;font-size:16px;color:var(--t2);line-height:1.7}
+  .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s var(--e)}
+  .rv.in{opacity:1;transform:translateY(0)}
+  .rv1{transition-delay:.1s}.rv2{transition-delay:.2s}.rv3{transition-delay:.3s}.rv4{transition-delay:.4s}
+
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .25s var(--e);position:relative;overflow:hidden}
+  .btn-g{background:var(--g);color:#040810;box-shadow:0 2px 12px rgba(200,169,81,.05)}
+  .btn-g:hover{background:#D4B85E;box-shadow:0 4px 24px rgba(200,169,81,.14);transform:translateY(-1px)}
+  .btn-g::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.10) 50%,transparent 60%);transform:translateX(-100%);transition:transform .55s}
+  .btn-g:hover::after{transform:translateX(100%)}
+  .btn-o{background:transparent;border:1px solid rgba(255,255,255,.10);color:var(--t1)}
+  .btn-o:hover{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.015);transform:translateY(-1px)}
+
+  /* ═══════════ PAGE HERO ═══════════ */
+  .page-hero{position:relative;z-index:1;padding:200px 8% 112px;text-align:center}
+  .page-hero .sec-k{margin-bottom:24px}
+
+  /* ═══════════ ABOUT ═══════════ */
+  .about-block{max-width:720px;margin:0 auto;text-align:center}
+  .about-block p{font-size:17px;color:var(--t2);line-height:1.8}
+  .about-block .hl{color:var(--g);font-weight:600}
+
+  .value-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:64px auto 0}
+  .value-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:48px 36px;text-align:center;transition:all .3s var(--e)}
+  .value-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.08);box-shadow:0 12px 36px rgba(0,0,0,.22)}
+  .value-icon{width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;margin:0 auto 20px}
+  .value-card h4{font-size:18px;font-weight:600;margin-bottom:8px}
+  .value-card p{font-size:14px;color:var(--t2);line-height:1.6}
+
+  /* ═══════════ WHY (Promise) ═══════════ */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
+  .why-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:44px 40px;transition:all .3s var(--e)}
+  .why-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.08);box-shadow:0 12px 36px rgba(0,0,0,.22);background:var(--sf2)}
+  .why-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .why-card h4{font-size:18px;font-weight:600;margin-bottom:6px;letter-spacing:-.25px}
+  .why-zh{font-size:12px;font-weight:600;color:var(--g);margin-bottom:14px}
+  .why-card p{font-size:14px;color:var(--t2);line-height:1.65}
+
+  footer{border-top:1px solid var(--br);padding:80px 8% 40px;position:relative;z-index:1}
+  .ft-i{max-width:1080px;margin:0 auto}
+  .ft-t{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:64px;margin-bottom:56px}
+  .ft-b{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
+  .ft-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#040810}
+  .ft-d{font-size:13.5px;color:var(--t3);line-height:1.65;max-width:250px}
+  .ft-h{font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--t2);margin-bottom:20px;text-transform:uppercase}
+  .ft-l{display:flex;flex-direction:column;gap:8px}
+  .ft-l a{font-size:13.5px;color:var(--t3);transition:color .2s}
+  .ft-l a:hover{color:var(--t1)}
+  .ft-x{padding-top:32px;border-top:1px solid var(--br);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--t3)}
+
+  @media(max-width:860px){
+    .nav{top:8px;left:3%;transform:none;width:94%;padding:0 4px 0 14px;border-radius:12px;height:48px}
+    .nav-l a{font-size:12px;padding:6px 7px}.nav-cta{padding:7px 13px;font-size:12px!important}
+    .value-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}
+    .ft-t{grid-template-columns:1fr 1fr;gap:40px}.ft-x{flex-direction:column;gap:12px;text-align:center}
+    .sec,.page-hero{padding:128px 6%}
+  }
+  @media(max-width:500px){
+    .ft-t{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="amb"><span class="amb-o a"></span><span class="amb-o b"></span><span class="amb-g"></span><span class="amb-n"></span></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-b"><span class="nav-m">TB</span>ThaiBridge</a>
+  <div class="nav-l">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="about.html" class="active">About</a>
+    <a href="contact.html" class="nav-cta">Book a Call</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="sec-k rv">About ThaiBridge</div>
+  <h1 class="sec-t rv rv1">Bridging China &amp; Thailand.</h1>
+</section>
+
+<section class="sec" id="who-we-are">
+  <div class="ctr">
+    <div class="sec-hd rv">
+      <div class="sec-k">Who We Are</div>
+      <h2 class="sec-t">Not consultants. Operators.</h2>
+    </div>
+    <div class="about-block">
+      <p class="rv">
+        ThaiBridge was founded by a small team of Chinese and Thai professionals who saw the same pattern repeat itself: ambitious Chinese brands with world-class products entering the Thai market, only to stumble on the same invisible obstacles — unvetted partners, language gaps, and local dynamics that no amount of remote research could uncover. We built ThaiBridge to be the fix. <span class="hl">We are headquartered in Bangkok, Thailand</span>, and every member of our core team lives and works here. This is not a remote operation with a local mailbox. We are on the ground, every day, building relationships, visiting warehouses, meeting creators, and understanding the market as it actually is — not as a report says it should be.
+      </p>
+      <p class="rv rv1" style="margin-top:24px">
+        Our team is <span class="hl">fully bilingual in Chinese and Thai</span>, and we consider that the bare minimum. Real communication between Chinese brands and Thai partners requires more than translation — it requires understanding the unspoken expectations each side brings to the table. Chinese businesses prioritize speed, scale, and margin discipline. Thai partners value relationship, face, and long-term stability. We sit at the intersection of both cultures and translate not just the words, but the intent behind them. This is the work that prevents deals from quietly falling apart in the space between two languages.
+      </p>
+      <p class="rv rv2" style="margin-top:24px">
+        We are <span class="hl">not a consulting firm</span>. We do not sell decks, we do not charge for introductions, and we do not disappear after delivering a report. Every engagement begins with a concrete operational goal — launch a product, find a warehouse, sign a creator campaign, match with a distributor — and we stay involved until that goal is achieved, measured, and stable. Our revenue comes from the work itself, not from marking up third-party services. When we recommend a warehouse, it is because we have walked the floor, met the manager, and would store our own inventory there. When we connect you with a creator, it is because we have reviewed their audience data and verified their engagement is real.
+      </p>
+      <p class="rv rv3" style="margin-top:24px">
+        <span class="hl">We earn trust through execution.</span> In the cross-border business world, trust is not a branding exercise — it is the accumulated weight of showing up, doing the work, and delivering results over time. Every relationship we build, every partner we vet, and every project we take on carries our reputation. We do not take that lightly. Our ambition is not to become the biggest name in the market. It is to become the partner that a Chinese brand calls first when they think about Thailand — because the last time, and the time before that, we made it work.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="values">
+  <div class="ctr">
+    <div class="sec-hd rv">
+      <div class="sec-k">Our Values</div>
+      <h2 class="sec-t">What we stand for.</h2>
+      <p class="sec-s">Three principles that guide every decision we make — from who we hire to which partners we introduce to our clients.</p>
+    </div>
+    <div class="value-grid">
+      <div class="value-card rv">
+        <div class="value-icon" style="background:rgba(200,169,81,.06);color:#C8A951">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>Trust</h4>
+        <p>Trust is the foundation of every cross-border relationship. Every introduction we make carries our name. Every partner we recommend has been personally visited and vetted. If a partner is not good enough for our own business, they will never reach yours. We would rather say "we don't know yet" than hand you an unverified answer.</p>
+      </div>
+      <div class="value-card rv rv1">
+        <div class="value-icon" style="background:rgba(59,130,246,.06);color:#3B82F6">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Execution</h4>
+        <p>Strategy without execution is just expensive conversation. We measure ourselves by outcomes, not outputs. A warehouse goes live. A creator posts. A distributor signs a contract. We stay with each engagement until the result is achieved and stable — not until the report is delivered. Execution is our product.</p>
+      </div>
+      <div class="value-card rv rv2">
+        <div class="value-icon" style="background:rgba(139,92,246,.06);color:#A78BFA">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>China &times; Thailand</h4>
+        <p>We are not a bridge that stands on one shore and points at the other. We live in both worlds, speak both languages, and understand both business cultures from the inside. We do not just translate words — we translate expectations, norms, negotiation styles, and what "urgent" means on each side of the bridge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="why-we-exist">
+  <div class="ctr">
+    <div class="sec-hd rv">
+      <div class="sec-k">Why We Exist</div>
+      <h2 class="sec-t">Because the gap is real,<br>and the cost of getting it wrong is too high.</h2>
+      <p class="sec-s">This is the problem ThaiBridge was built to solve.</p>
+    </div>
+    <div class="about-block">
+      <p class="rv">
+        Chinese brands produce some of the most competitive products in the world — in consumer electronics, home goods, beauty, fashion, and beyond. The quality-to-price ratio is unmatched, and the supply chain behind it is fast and relentless. When these brands look abroad for growth, Thailand is a natural first step: a large, digitally connected consumer market with cultural proximity to China and a mature e-commerce infrastructure. On paper, it should work easily. In practice, it rarely does.
+      </p>
+      <p class="rv rv1" style="margin-top:24px">
+        Entering Thailand alone — without local operators who understand both sides — carries real risk. The wrong warehouse partner means lost inventory, delayed shipments, and customer complaints that destroy a brand's reputation before it has a chance to establish one. The wrong creator partnership means wasted marketing budget on inflated follower counts and fake engagement. The wrong distributor means a product stranded in the wrong channels, at the wrong price, with no path to recovery. <span class="hl">Each of these failures has happened to a Chinese brand we know.</span> Each of them was preventable.
+      </p>
+      <p class="rv rv2" style="margin-top:24px">
+        ThaiBridge exists to make sure these failures do not happen to our clients. We bridge the gap between Chinese ambition and Thai reality — not with PowerPoint slides and introductory calls, but with <span class="hl">verified partners, real operational work, and a team that stays on the ground</span> long after the initial launch. We exist because cross-border business deserves better than guesswork, and because we believe the partnership between Chinese brands and Thai consumers is too valuable to be left to chance.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec-alt" id="promise">
+  <div class="ctr">
+    <div class="sec-hd rv">
+      <div class="sec-k">Our Promise</div>
+      <h2 class="sec-t">Four things we will<br>never do.</h2>
+      <p class="sec-s">Promises are easy to make and hard to keep. These four define the minimum standard we hold ourselves to — on every engagement, with every client.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card rv">
+        <div class="why-icon" style="background:rgba(200,169,81,.06);color:#C8A951">
+          <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>No Blind Introductions</h4>
+        <p class="why-zh">不盲目介绍</p>
+        <p>Every partner we connect you with has been personally visited, interviewed, and verified by our team. We have seen their operation, met their leadership, and checked their references. We do not maintain a database of unvetted contacts. We maintain relationships with people we would trust with our own business.</p>
+      </div>
+      <div class="why-card rv rv1">
+        <div class="why-icon" style="background:rgba(59,130,246,.06);color:#3B82F6">
+          <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><path d="M20 7l-9 9-4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>No Abandoned Projects</h4>
+        <p class="why-zh">不中途放弃</p>
+        <p>We do not hand off a partner introduction and walk away. We stay embedded through negotiation, setup, launch, and stabilization. If something goes wrong in month three, we are the ones on the phone — not forwarding your email to someone else. Our engagement ends when the result is achieved, not when the contract says it can end.</p>
+      </div>
+      <div class="why-card rv rv2">
+        <div class="why-icon" style="background:rgba(139,92,246,.06);color:#A78BFA">
+          <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/><line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="1.6"/><line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="10" x2="22" y2="10" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>No Hidden Costs</h4>
+        <p class="why-zh">透明定价</p>
+        <p>Our pricing is transparent and agreed upon before any work begins. We do not mark up third-party services without disclosure. We do not take undisclosed commissions from partners we introduce. Our clients always know exactly what they are paying for, what it costs, and where the money goes. This clarity is non-negotiable.</p>
+      </div>
+      <div class="why-card rv rv3">
+        <div class="why-icon" style="background:rgba(6,182,212,.06);color:#22D3EE">
+          <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>No Language Gaps</h4>
+        <p class="why-zh">双语无缝沟通</p>
+        <p>Every client-facing member of our team is bilingual in Chinese and Thai. When you speak with us, nothing is lost in translation — not the nuance of your requirements, not the specifics of a contract clause, and not the cultural subtext of a negotiation. We exist precisely because language gaps are where cross-border deals go to die.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="cta">
+  <div class="ctr" style="text-align:center">
+    <div class="rv">
+      <div class="sec-k">Work with us</div>
+      <h2 class="sec-t" style="max-width:600px;margin-left:auto;margin-right:auto">Ready to build your<br>presence in Thailand?</h2>
+      <p class="sec-s" style="margin-bottom:40px">Let's talk about your brand, your goals, and what it would take to make Thailand work for you. No commitment. No sales pitch. Just a real conversation with people who understand both sides.</p>
+      <div style="display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap">
+        <a href="contact.html" class="btn btn-g">Start the Conversation <span style="font-size:17px">&rarr;</span></a>
+        <a href="services.html" class="btn btn-o">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-i">
+    <div class="ft-t">
+      <div><div class="ft-b"><span class="ft-m">TB</span>ThaiBridge</div><p class="ft-d">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p></div>
+      <div><div class="ft-h">Pages</div><div class="ft-l"><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+      <div><div class="ft-h">Services</div><div class="ft-l"><a href="services.html">Warehouse</a><a href="services.html">Creator Network</a><a href="services.html">Business Matching</a><a href="services.html">Market Research</a></div></div>
+      <div><div class="ft-h">Contact</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a></div></div>
+    </div>
+    <div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.06,rootMargin:'0px 0px -16px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  const nav=document.getElementById('nav');nav.classList.toggle('sc',window.scrollY>40);
+  window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>40),{passive:true});
+</script>
+</body>
+</html>
