@@ -3,275 +3,306 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ThaiBridge — Your Trusted Local Partner in Thailand</title>
-<meta name="description" content="ThaiBridge helps Chinese brands enter Thailand through verified local resources, market insight, and reliable execution.">
-<meta property="og:title" content="ThaiBridge — Your Trusted Local Partner in Thailand">
-<meta property="og:description" content="Verified local resources, market insight, and reliable execution for Chinese brands entering the Thai market.">
+<title>ThaiBridge — Your local team in Thailand. No middlemen. No guesswork.</title>
+<meta name="description" content="ThaiBridge is your embedded local operating partner in Thailand. Verified resources, real execution, long-term partnership.">
+<meta property="og:title" content="ThaiBridge — Your local team in Thailand">
+<meta property="og:description" content="Enter the Thai market with confidence. We handle warehousing, creator partnerships, and local operations — so you can focus on your product.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thaibridge.asia">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ThaiBridge — Your Trusted Local Partner in Thailand">
-<meta name="twitter:description" content="Verified local resources and reliable execution for Chinese brands entering Thailand.">
+<meta name="twitter:title" content="ThaiBridge — Your local team in Thailand">
+<meta name="twitter:description" content="Enter the Thai market with confidence. Verified resources, real execution, long-term partnership.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
 <style>
-  /* ═══════════════════════════════════════════
-     RESET + DESIGN TOKENS (8pt grid basis)
-     ═══════════════════════════════════════════ */
+  /* ═══════════════════════════════════════════════════════════════════
+     THAIBRIDGE V3 — DESIGN SYSTEM
+     Brand: Embedded local operating partner
+     Tone: Quiet confidence. Specific. Never arrogant.
+     ═══════════════════════════════════════════════════════════════════ */
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 
   :root{
-    --bg:       #060B14;
-    --bg2:      #080F1E;
-    --surface:  #0C1326;
-    --surface-h:#0F172C;
-    --border:   rgba(255,255,255,.05);
-    --border-h: rgba(255,255,255,.08);
+    --bg:       #050914;
+    --bg-soft:  #070D1C;
+    --surface:  #0A1024;
+    --surface2: #0D142C;
+    --border:   rgba(255,255,255,.045);
+    --border2:  rgba(255,255,255,.075);
     --t1:       #EDF0F7;
-    --t2:       #9CA3B4;
-    --t3:       #5D6678;
-    --blue:     #3B82F6;
+    --t2:       #959EB4;
+    --t3:       #535B6E;
     --gold:     #C8A951;
-    --gold-dim: rgba(200,169,81,.06);
+    --gold-dim: rgba(200,169,81,.07);
+    --gold-mid: rgba(200,169,81,.14);
+    --blue:     #3B82F6;
     --ease:     cubic-bezier(.22,.61,.36,1);
-    --radius:   12px;
-    --radius-l: 20px;
+    --r:        12px;
+    --r-lg:     20px;
   }
 
   html{scroll-behavior:smooth}
   body{
     font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
     background:var(--bg);color:var(--t1);line-height:1.6;
-    -webkit-font-smoothing:antialiased;font-weight:400;
+    -webkit-font-smoothing:antialiased;font-weight:400;overflow-x:hidden;
   }
   a{color:inherit;text-decoration:none}
 
-  /* Ambient */
-  .bg-amb{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
-  .bg-amb .orb{position:absolute;border-radius:50%;filter:blur(200px)}
-  .bg-amb .orb.a{width:880px;height:880px;background:rgba(59,130,246,.03);top:-360px;right:-280px}
-  .bg-amb .orb.b{width:640px;height:640px;background:rgba(200,169,81,.015);bottom:-240px;left:-220px}
-  .bg-amb .g{position:absolute;inset:0;opacity:.012;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:80px 80px}
+  /* ═══════════════════════════════════════════════════════════════════
+     AMBIENT BACKGROUND — depth through layered effects
+     ═══════════════════════════════════════════════════════════════════ */
+  .bg-layer{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .bg-orb{position:absolute;border-radius:50%;filter:blur(180px);opacity:.65}
+  .bg-orb.top{width:900px;height:900px;background:radial-gradient(circle,rgba(59,130,246,.06),transparent 70%);top:-420px;right:-280px}
+  .bg-orb.bot{width:700px;height:700px;background:radial-gradient(circle,rgba(200,169,81,.025),transparent 70%);bottom:-320px;left:-260px}
+  .bg-grid{position:absolute;inset:0;opacity:.014;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:80px 80px}
+  .bg-noise{position:absolute;inset:0;opacity:.018;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.72' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 
-  /* ════════════ NAV ════════════ */
-  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;align-items:center;justify-content:space-between;width:min(94%,1080px);height:56px;padding:0 8px 0 24px;background:rgba(12,19,38,.70);backdrop-filter:blur(24px) saturate(180%);-webkit-backdrop-filter:blur(24px) saturate(180%);border:1px solid var(--border);border-radius:16px;transition:background .4s,border-color .4s,box-shadow .4s}
-  .nav.sc{background:rgba(12,19,38,.92);border-color:var(--border-h);box-shadow:0 4px 48px rgba(0,0,0,.35)}
-  .nav-b{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px;color:var(--t1)}
-  .nav-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#9E7E2E);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#060B14}
-  .nav-l{display:flex;align-items:center;gap:4px}
-  .nav-l a{font-size:14px;font-weight:500;color:var(--t2);padding:8px 16px;border-radius:8px;transition:color .2s,background .2s}
-  .nav-l a:hover{color:var(--t1);background:rgba(255,255,255,.035)}
-  .nav-l .nav-cta{margin-left:12px;padding:8px 20px;border-radius:10px;font-size:14px;font-weight:600;color:#060B14!important;background:var(--gold);transition:all .25s var(--ease)}
-  .nav-l .nav-cta:hover{background:#D4B85E!important;box-shadow:0 0 24px rgba(200,169,81,.18);transform:translateY(-1px)}
+  /* ═══════════════════════════════════════════════════════════════════
+     NAVIGATION — glass capsule
+     ═══════════════════════════════════════════════════════════════════ */
+  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;width:min(94%,1080px);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 24px;background:rgba(10,16,36,.68);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--border);border-radius:16px;transition:all .4s var(--ease)}
+  .nav.scrolled{background:rgba(10,16,36,.92);border-color:var(--border2);box-shadow:0 4px 56px rgba(0,0,0,.40)}
+  .nav-brand{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px}
+  .nav-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#050914}
+  .nav-links{display:flex;align-items:center;gap:4px}
+  .nav-links a{font-size:14px;font-weight:500;color:var(--t2);padding:8px 16px;border-radius:8px;transition:all .2s}
+  .nav-links a:hover{color:var(--t1);background:rgba(255,255,255,.03)}
+  .nav-cta{margin-left:12px;padding:9px 20px;font-size:14px;font-weight:600;color:#050914!important;background:var(--gold);border-radius:10px;transition:all .25s var(--ease)}
+  .nav-cta:hover{background:#D4B85E!important;box-shadow:0 0 32px rgba(200,169,81,.18);transform:translateY(-1px)}
 
-  /* ════════════ SHARED ════════════ */
+  /* ═══════════════════════════════════════════════════════════════════
+     SHARED SECTION UTILITIES
+     ═══════════════════════════════════════════════════════════════════ */
   .sec{position:relative;z-index:1;padding:160px 8%}
-  .sec-alt{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .sec-alt{background:linear-gradient(180deg,var(--bg-soft),var(--bg) 40%,var(--bg-soft))}
   .ctr{max-width:1080px;margin:0 auto}
-  .sec-head{margin-bottom:96px;text-align:center}
-  .sec-kicker{font-size:12px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
-  .sec-title{font-size:clamp(32px,4.2vw,48px);font-weight:700;letter-spacing:-1px;line-height:1.12;margin-bottom:16px}
-  .sec-sub{max-width:480px;margin:0 auto;font-size:16px;color:var(--t2);line-height:1.7}
+  .sec-intro{margin-bottom:112px;text-align:center}
+  .sec-kicker{font-size:11.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+  .sec-heading{font-size:clamp(32px,4vw,48px);font-weight:700;letter-spacing:-1px;line-height:1.1;margin-bottom:20px}
+  .sec-subtitle{max-width:520px;margin:0 auto;font-size:16px;color:var(--t2);line-height:1.7;font-weight:400}
 
-  /* Scroll-reveal: unified — 20px up, 0.6s */
+  /* Animations — unified 20px fade-up, 0.6s */
   .rv{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s var(--ease)}
-  .rv.in{opacity:1;transform:translateY(0)}
-  .rv-d1{transition-delay:.08s}.rv-d2{transition-delay:.16s}.rv-d3{transition-delay:.24s}
+  .rv.visible{opacity:1;transform:translateY(0)}
+  .rv-1{transition-delay:.08s}.rv-2{transition-delay:.16s}.rv-3{transition-delay:.24s}.rv-4{transition-delay:.32s}
 
-  /* ════════════ BUTTONS ════════════ */
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .25s var(--ease);position:relative;overflow:hidden}
-  .btn-primary{background:var(--gold);color:#060B14;box-shadow:0 2px 12px rgba(200,169,81,.08)}
-  .btn-primary:hover{background:#D4B85E;box-shadow:0 4px 24px rgba(200,169,81,.18);transform:translateY(-1px)}
-  .btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.12) 50%,transparent 60%);transform:translateX(-100%);transition:transform .6s}
+  /* ═══════════════════════════════════════════════════════════════════
+     BUTTONS
+     ═══════════════════════════════════════════════════════════════════ */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .25s var(--ease);position:relative;overflow:hidden}
+  .btn-primary{background:var(--gold);color:#050914;box-shadow:0 2px 12px rgba(200,169,81,.06)}
+  .btn-primary:hover{background:#D4B85E;box-shadow:0 4px 24px rgba(200,169,81,.16);transform:translateY(-1px)}
+  .btn-primary::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.10) 50%,transparent 60%);transform:translateX(-100%);transition:transform .55s}
   .btn-primary:hover::after{transform:translateX(100%)}
   .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.10);color:var(--t1)}
-  .btn-ghost:hover{border-color:rgba(255,255,255,.20);background:rgba(255,255,255,.02);transform:translateY(-1px)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.015);transform:translateY(-1px)}
 
-  /* ════════════ HERO ════════════ */
-  .hero{position:relative;z-index:1;display:grid;grid-template-columns:1.1fr 0.9fr;align-items:center;gap:96px;max-width:1200px;margin:0 auto;padding:200px 8% 176px;min-height:100vh}
-  .hero-eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:600;letter-spacing:2px;color:var(--gold);text-transform:uppercase;margin-bottom:32px}
-  .hero-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold);opacity:.35}
-  .hero h1{font-size:clamp(48px,6.4vw,84px);font-weight:700;line-height:1.04;letter-spacing:-2px;margin-bottom:32px}
-  .hero h1 em{font-style:normal;background:linear-gradient(135deg,#C8A951 0%,#E8D48B 50%,#C8A951 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-  .hero-desc{max-width:440px;font-size:17px;line-height:1.75;color:var(--t2);margin-bottom:16px;font-weight:400}
-  .hero-checks{display:flex;flex-wrap:wrap;gap:24px;margin-bottom:48px}
-  .hero-check{display:flex;align-items:center;gap:10px;font-size:14px;font-weight:500;color:var(--t2)}
-  .hero-check svg{flex-shrink:0;color:var(--gold)}
+  /* ═══════════════════════════════════════════════════════════════════
+     HERO — cinematic, large type, breathing room
+     ═══════════════════════════════════════════════════════════════════ */
+  .hero{position:relative;z-index:1;min-height:100vh;display:flex;align-items:center;padding:180px 8% 160px}
+  .hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.15fr 0.85fr;gap:104px;align-items:center;width:100%}
+  .hero-badge{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;font-weight:600;letter-spacing:2.5px;color:var(--gold);text-transform:uppercase;margin-bottom:40px}
+  .hero-badge::before{content:'';width:20px;height:1px;background:var(--gold);opacity:.35}
+  .hero h1{font-size:clamp(48px,6.5vw,86px);font-weight:700;line-height:1.04;letter-spacing:-2.2px;margin-bottom:28px}
+  .hero h1 em{font-style:normal;background:linear-gradient(135deg,#C8A951 0%,#E2CC7A 50%,#C8A951 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .hero-desc{max-width:430px;font-size:17px;line-height:1.75;color:var(--t2);margin-bottom:36px;font-weight:400}
   .hero-actions{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-
   .hero-visual{display:flex;align-items:center;justify-content:center;position:relative}
-  .hglobe{position:relative;width:100%;max-width:440px;aspect-ratio:1}
-  .hglobe-glow{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
-  .hglobe-glow.g1{width:280px;height:280px;background:rgba(200,169,81,.05);top:50%;left:50%;transform:translate(-50%,-50%)}
-  .hglobe-glow.g2{width:200px;height:200px;background:rgba(59,130,246,.03);bottom:8%;right:2%}
+  .hv-container{position:relative;width:100%;max-width:440px;aspect-ratio:1}
+  .hv-orb{position:absolute;border-radius:50%;filter:blur(140px);pointer-events:none}
+  .hv-orb.a{width:320px;height:320px;background:rgba(200,169,81,.045);top:50%;left:50%;transform:translate(-50%,-50%)}
+  .hv-orb.b{width:220px;height:220px;background:rgba(59,130,246,.025);bottom:6%;right:0}
   @keyframes dash-flow{to{stroke-dashoffset:-20}}
-  @keyframes node-beat{0%,100%{r:5;opacity:.6}50%{r:10;opacity:1}}
-  .c-line{stroke-dasharray:5 4;animation:dash-flow 2.4s linear infinite}
-  .c-line.b{animation-delay:.8s}.c-line.c{animation-delay:1.4s}
-  .n-cn{animation:node-beat 3.6s ease-in-out infinite}
-  .n-th{animation:node-beat 3.6s ease-in-out 1.2s infinite}
-  @keyframes float{0%,100%{opacity:.25;transform:translateY(0)}50%{opacity:.6;transform:translateY(-14px)}}
-  .p-f{animation:float 7s ease-in-out infinite}
+  @keyframes node-beat{0%,100%{r:4.5;opacity:.55}50%{r:10;opacity:1}}
+  @keyframes float-up{0%,100%{opacity:.2;transform:translateY(0)}50%{opacity:.55;transform:translateY(-16px)}}
+  .cl{stroke-dasharray:5 4;animation:dash-flow 2.4s linear infinite}
+  .cl.b{animation-delay:.8s}.cl.c{animation-delay:1.5s}
+  .nd-cn{animation:node-beat 3.8s ease-in-out infinite}
+  .nd-th{animation:node-beat 3.8s ease-in-out 1.3s infinite}
+  .fp{animation:float-up 7s ease-in-out infinite}
 
-  /* ════════════ SERVICES 2×2 ════════════ */
+  /* ═══════════════════════════════════════════════════════════════════
+     CORE SERVICES — 2×2 premium cards
+     ═══════════════════════════════════════════════════════════════════ */
   .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-  .svc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-l);padding:48px 40px;transition:all .3s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(0,0,0,.15)}
-  .svc-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .35s;background:radial-gradient(560px circle at var(--mx,50%) var(--my,50%),rgba(200,169,81,.02),transparent 50%);pointer-events:none}
+  .svc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:56px 44px;transition:all .35s var(--ease);position:relative;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 4px rgba(0,0,0,.18)}
+  .svc-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .4s;background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),rgba(200,169,81,.018),transparent 55%);pointer-events:none}
   .svc-card:hover::before{opacity:1}
-  .svc-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.12);box-shadow:0 8px 32px rgba(0,0,0,.25)}
-  .svc-icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:24px}
-  .svc-card h3{font-size:20px;font-weight:600;margin-bottom:8px;letter-spacing:-.3px;color:var(--t1)}
-  .svc-card .svc-hint{font-size:14px;font-weight:400;color:var(--gold);margin-bottom:20px;line-height:1.5}
-  .svc-list{display:flex;flex-direction:column;gap:10px;flex:1;margin-bottom:24px}
-  .svc-list span{font-size:14px;color:var(--t2);display:flex;align-items:center;gap:10px;line-height:1.5;font-weight:400}
-  .svc-list span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:.45}
+  .svc-card:hover{transform:translateY(-3px);border-color:rgba(200,169,81,.11);box-shadow:0 12px 40px rgba(0,0,0,.28)}
+  .svc-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+  .svc-card h3{font-size:21px;font-weight:600;margin-bottom:10px;letter-spacing:-.3px}
+  .svc-card .svc-tag{font-size:14px;color:var(--gold);margin-bottom:24px;line-height:1.55;font-weight:400}
+  .svc-list{flex:1;display:flex;flex-direction:column;gap:12px;margin-bottom:28px}
+  .svc-list span{font-size:14px;color:var(--t2);display:flex;align-items:center;gap:10px;line-height:1.5}
+  .svc-list span::before{content:'';width:4px;height:4px;border-radius:50%;background:var(--gold);flex-shrink:0;opacity:.4}
   .svc-link{font-size:14px;font-weight:600;color:var(--gold);display:inline-flex;align-items:center;gap:6px;transition:gap .25s}
-  .svc-card:hover .svc-link{gap:12px}
+  .svc-card:hover .svc-link{gap:14px}
 
-  /* ════════════ PROCESS ════════════ */
-  .tl-wrap{max-width:640px;margin:0 auto;position:relative;padding-left:56px}
-  .tl-wrap::before{content:'';position:absolute;left:20px;top:8px;bottom:8px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(200,169,81,.04),var(--gold))}
-  .tl-step{position:relative;padding:8px 0 48px 40px;transition:transform .25s var(--ease)}
+  /* ═══════════════════════════════════════════════════════════════════
+     WHY THAIBRIDGE — 2×2 narrative
+     ═══════════════════════════════════════════════════════════════════ */
+  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
+  .why-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:44px 40px;transition:all .3s var(--ease);box-shadow:0 2px 4px rgba(0,0,0,.15)}
+  .why-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.09);box-shadow:0 10px 32px rgba(0,0,0,.22);background:var(--surface2)}
+  .why-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:22px}
+  .why-card h4{font-size:18px;font-weight:600;margin-bottom:6px;letter-spacing:-.25px}
+  .why-card .why-zh{font-size:12px;font-weight:600;color:var(--gold);margin-bottom:14px}
+  .why-card p{font-size:14px;color:var(--t2);line-height:1.65;font-weight:400}
+
+  /* ═══════════════════════════════════════════════════════════════════
+     HOW WE WORK — timeline
+     ═══════════════════════════════════════════════════════════════════ */
+  .tl{max-width:640px;margin:0 auto;position:relative;padding-left:64px}
+  .tl::before{content:'';position:absolute;left:20px;top:12px;bottom:12px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(200,169,81,.03),var(--gold))}
+  .tl-step{position:relative;padding:12px 0 56px 48px;transition:transform .25s var(--ease)}
   .tl-step:hover{transform:translateX(6px)}
-  .tl-step::before{content:'';position:absolute;left:-40px;top:14px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--bg2);box-shadow:0 0 16px rgba(200,169,81,.16);z-index:1;transition:box-shadow .3s}
-  .tl-step:hover::before{box-shadow:0 0 28px rgba(200,169,81,.28)}
+  .tl-step::before{content:'';position:absolute;left:-48px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid var(--bg-soft);box-shadow:0 0 18px rgba(200,169,81,.14);z-index:1;transition:box-shadow .3s}
+  .tl-step:hover::before{box-shadow:0 0 30px rgba(200,169,81,.26)}
   .tl-step:last-child{padding-bottom:0}
   .tl-num{font-size:11px;font-weight:700;letter-spacing:3px;color:var(--gold);margin-bottom:6px}
   .tl-step h4{font-size:20px;font-weight:600;margin-bottom:6px;letter-spacing:-.3px}
-  .tl-step p{font-size:15px;color:var(--t2);line-height:1.65;max-width:440px;font-weight:400}
+  .tl-step p{font-size:15px;color:var(--t2);line-height:1.65;max-width:440px}
 
-  /* ════════════ WHY 2×2 ════════════ */
-  .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:880px;margin:0 auto}
-  .why-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-l);padding:40px;transition:all .3s var(--ease);box-shadow:0 1px 2px rgba(0,0,0,.15)}
-  .why-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.10);box-shadow:0 8px 28px rgba(0,0,0,.22);background:var(--surface-h)}
-  .why-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:20px}
-  .why-card h4{font-size:18px;font-weight:600;margin-bottom:6px;letter-spacing:-.25px}
-  .why-card .why-tag{font-size:12px;font-weight:600;color:var(--gold);margin-bottom:12px}
-  .why-card p{font-size:14px;color:var(--t2);line-height:1.65;font-weight:400}
+  /* ═══════════════════════════════════════════════════════════════════
+     INDUSTRIES
+     ═══════════════════════════════════════════════════════════════════ */
+  .ind-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:960px;margin:0 auto}
+  .ind-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:36px 32px;text-align:center;transition:all .3s var(--ease);box-shadow:0 2px 3px rgba(0,0,0,.12)}
+  .ind-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.10);box-shadow:0 8px 28px rgba(0,0,0,.18)}
+  .ind-icon{font-size:36px;margin-bottom:16px;display:block}
+  .ind-card h4{font-size:17px;font-weight:600;margin-bottom:6px}
+  .ind-card p{font-size:13.5px;color:var(--t2);line-height:1.55}
 
-  /* ════════════ ABOUT ════════════ */
-  .about-text{max-width:640px;margin:0 auto;text-align:center}
-  .about-text p{font-size:18px;color:var(--t2);line-height:1.8;font-weight:400}
-  .about-text .hl{color:var(--gold);font-weight:600}
+  /* ═══════════════════════════════════════════════════════════════════
+     TRUST
+     ═══════════════════════════════════════════════════════════════════ */
+  .trust-wrap{max-width:800px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+  .trust-block{text-align:center;padding:32px 24px}
+  .trust-num{font-size:56px;font-weight:700;letter-spacing:-1.5px;background:linear-gradient(135deg,#C8A951,#E2CC7A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px}
+  .trust-label{font-size:15px;font-weight:600;margin-bottom:6px}
+  .trust-desc{font-size:13.5px;color:var(--t2);line-height:1.55}
 
-  /* ════════════ CONTACT ════════════ */
-  .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:960px;margin:0 auto;align-items:start}
-  .ci-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-content:start}
-  .ci-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 20px;text-align:center;transition:all .3s var(--ease);box-shadow:0 1px 2px rgba(0,0,0,.12)}
-  .ci-card:hover{border-color:rgba(200,169,81,.10);background:var(--surface-h);transform:translateY(-2px)}
-  .ci-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
-  .ci-label{font-size:10px;font-weight:600;letter-spacing:2px;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
-  .ci-value{font-size:14px;font-weight:500;color:var(--t1);line-height:1.4}
-  .cta-panel{background:rgba(200,169,81,.025);border:1px solid rgba(200,169,81,.08);border-radius:var(--radius-l);padding:56px 40px;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center}
-  .cta-panel h3{font-size:26px;font-weight:700;letter-spacing:-.5px;margin-bottom:12px}
-  .cta-panel .cta-desc{font-size:15px;color:var(--t2);margin-bottom:8px;line-height:1.6;max-width:280px;font-weight:400}
-  .cta-panel .cta-live{font-size:12px;color:var(--t3);margin-bottom:40px;display:flex;align-items:center;gap:8px;justify-content:center;font-weight:500}
-  .cta-dot{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.30)}
-  .cta-btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:264px}
-  .cta-btns .btn{width:100%}
+  /* ═══════════════════════════════════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════════════════════════════════ */
+  .ct-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px;max-width:1000px;margin:0 auto;align-items:start}
+  .ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .ct-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:24px 20px;text-align:center;transition:all .3s var(--ease)}
+  .ct-card:hover{border-color:rgba(200,169,81,.09);background:var(--surface2);transform:translateY(-2px)}
+  .ct-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
+  .ct-label{font-size:10px;font-weight:600;letter-spacing:2px;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
+  .ct-value{font-size:14px;font-weight:500;color:var(--t1);line-height:1.4}
+  .ct-panel{background:var(--surface);border:1px solid rgba(200,169,81,.08);border-radius:var(--r-lg);padding:56px 44px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .ct-panel h3{font-size:26px;font-weight:700;letter-spacing:-.5px;margin-bottom:12px}
+  .ct-panel .ct-desc{font-size:15px;color:var(--t2);margin-bottom:8px;line-height:1.6;max-width:280px}
+  .ct-panel .ct-status{font-size:12px;color:var(--t3);margin-bottom:40px;display:flex;align-items:center;gap:8px;justify-content:center}
+  .ct-status .dot{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.25)}
+  .ct-btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:264px}
+  .ct-btns .btn{width:100%}
 
-  /* ════════════ FOOTER ════════════ */
-  .ft{border-top:1px solid var(--border);padding:72px 8% 40px;position:relative;z-index:1}
+  /* ═══════════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════════ */
+  .ft{border-top:1px solid var(--border);padding:80px 8% 40px;position:relative;z-index:1}
   .ft-inner{max-width:1080px;margin:0 auto}
-  .ft-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:56px;margin-bottom:48px}
-  .ft-b{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
-  .ft-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#9E7E2E);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#060B14}
-  .ft-desc{font-size:14px;color:var(--t3);line-height:1.65;max-width:240px;font-weight:400}
+  .ft-top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:64px;margin-bottom:56px}
+  .ft-brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
+  .ft-mark{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#050914}
+  .ft-desc{font-size:13.5px;color:var(--t3);line-height:1.65;max-width:250px}
   .ft-col h4{font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--t2);margin-bottom:20px;text-transform:uppercase}
-  .ft-col a{display:block;font-size:14px;color:var(--t3);margin-bottom:8px;transition:color .2s;font-weight:400}
+  .ft-col a{display:block;font-size:13.5px;color:var(--t3);margin-bottom:8px;transition:color .2s}
   .ft-col a:hover{color:var(--t1)}
-  .ft-bot{padding-top:32px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--t3);font-weight:400}
+  .ft-bot{padding-top:32px;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--t3)}
 
-  /* ════════════ RESPONSIVE ════════════ */
+  /* ═══════════════════════════════════════════════════════════════════
+     RESPONSIVE
+     ═══════════════════════════════════════════════════════════════════ */
   @media(max-width:860px){
     .nav{top:8px;left:3%;transform:none;width:94%;padding:0 4px 0 16px;border-radius:12px;height:48px}
-    .nav-l a{font-size:12px;padding:6px 8px}.nav-l .nav-cta{padding:7px 14px;font-size:12px!important}
-    .hero{grid-template-columns:1fr;padding:160px 6% 96px;min-height:auto;gap:56px}.hero-visual{order:-1}.hglobe{max-width:280px;margin:0 auto}
-    .svc-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}
-    .contact-layout{grid-template-columns:1fr}.ci-grid{grid-template-columns:1fr 1fr}
+    .nav-links a{font-size:12px;padding:6px 8px}.nav-cta{padding:7px 14px;font-size:12px!important}
+    .hero-inner{grid-template-columns:1fr;gap:64px}.hero-visual{order:-1}.hv-container{max-width:280px;margin:0 auto}
+    .svc-grid{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr}.ind-grid{grid-template-columns:1fr}
+    .trust-wrap{grid-template-columns:1fr;gap:16px}
+    .ct-layout{grid-template-columns:1fr}.ct-grid{grid-template-columns:1fr 1fr}
     .ft-top{grid-template-columns:1fr 1fr;gap:40px}.ft-bot{flex-direction:column;gap:12px;text-align:center}
-    .tl-wrap{padding-left:48px}
+    .sec{padding:120px 6%}.hero{padding:160px 6% 120px}
+    .tl{padding-left:48px}
   }
   @media(max-width:500px){
-    .hero h1{font-size:40px}.ci-grid{grid-template-columns:1fr}.ft-top{grid-template-columns:1fr}.hglobe{max-width:220px}
+    .hero h1{font-size:42px}.ct-grid{grid-template-columns:1fr}.ft-top{grid-template-columns:1fr}.hv-container{max-width:220px}
   }
 </style>
 </head>
 <body>
 
-<div class="bg-amb"><span class="orb a"></span><span class="orb b"></span><span class="g"></span></div>
+<!-- Ambient -->
+<div class="bg-layer">
+  <span class="bg-orb top"></span><span class="bg-orb bot"></span>
+  <span class="bg-grid"></span><span class="bg-noise"></span>
+</div>
 
-<!-- ════════════ NAV ════════════ -->
+<!-- =========== NAV =========== -->
 <nav class="nav" id="nav">
-  <a href="#" class="nav-b"><span class="nav-m">TB</span>ThaiBridge</a>
-  <div class="nav-l">
+  <a href="#" class="nav-brand"><span class="nav-mark">TB</span>ThaiBridge</a>
+  <div class="nav-links">
     <a href="#services">Services</a>
     <a href="#why">Why Us</a>
     <a href="#process">Process</a>
-    <a href="#contact" class="nav-cta">Book a Meeting</a>
+    <a href="#contact" class="nav-cta">Book a Call</a>
   </div>
 </nav>
 
-<!-- ════════════ HERO ════════════ -->
+<!-- =========== HERO =========== -->
 <section class="hero">
-  <div class="rv">
-    <div class="hero-eyebrow">China &middot; Thailand</div>
-    <h1>Your <em>trusted</em> local<br>partner in Thailand.</h1>
-    <p class="hero-desc">
-      Enter the Thai market with confidence. We handle
-      warehousing, local partnerships, and creator
-      marketing — so you can focus on your product.
-    </p>
-    <div class="hero-checks">
-      <span class="hero-check"><svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Verified Local Resources</span>
-      <span class="hero-check"><svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Market Insight</span>
-      <span class="hero-check"><svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> End-to-End Execution</span>
-      <span class="hero-check"><svg width="15" height="15" fill="none" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> Long-Term Partnership</span>
+  <div class="hero-inner">
+    <div class="rv">
+      <div class="hero-badge">Bangkok &middot; Thailand</div>
+      <h1>Your <em>trusted</em> local<br>partner in Thailand.</h1>
+      <p class="hero-desc">Enter the Thai market with confidence. We handle warehousing, partnerships, and local operations — so you can focus on your product.</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">Book a Free Consultation <span style="font-size:17px">&rarr;</span></a>
+        <a href="#services" class="btn btn-ghost">Explore Services</a>
+      </div>
     </div>
-    <div class="hero-actions">
-      <a href="#contact" class="btn btn-primary">Book a Free Consultation <span style="font-size:17px">&rarr;</span></a>
-      <a href="#services" class="btn btn-ghost">Explore Services</a>
-    </div>
-  </div>
-
-  <div class="hero-visual rv rv-d2">
-    <div class="hglobe">
-      <span class="hglobe-glow g1"></span><span class="hglobe-glow g2"></span>
-      <svg viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:1">
-        <circle cx="230" cy="215" r="205" stroke="rgba(255,255,255,.03)" stroke-width="1"/>
-        <circle cx="230" cy="215" r="155" stroke="rgba(255,255,255,.02)" stroke-width=".7" stroke-dasharray="3 10"/>
-        <circle cx="230" cy="215" r="100" stroke="rgba(255,255,255,.022)" stroke-width=".6" stroke-dasharray="2 8"/>
-        <ellipse cx="230" cy="215" rx="205" ry="68" stroke="rgba(255,255,255,.018)" stroke-width=".5"/>
-        <line x1="25" y1="215" x2="435" y2="215" stroke="rgba(255,255,255,.015)" stroke-width=".5"/>
-        <line x1="230" y1="10" x2="230" y2="420" stroke="rgba(255,255,255,.015)" stroke-width=".5"/>
-        <circle cx="155" cy="120" r="2" fill="rgba(255,255,255,.07)"/><circle cx="320" cy="260" r="1.6" fill="rgba(255,255,255,.05)"/><circle cx="108" cy="275" r="1.4" fill="rgba(255,255,255,.04)"/><circle cx="335" cy="148" r="1.8" fill="rgba(255,255,255,.05)"/><circle cx="275" cy="350" r="1.3" fill="rgba(255,255,255,.035)"/><circle cx="165" cy="310" r="1.2" fill="rgba(255,255,255,.035)"/>
-        <path d="M195 118 Q265 158 245 215" stroke="rgba(200,169,81,.25)" stroke-width="1.3" stroke-dasharray="5 4" class="c-line"/>
-        <path d="M245 215 Q258 232 268 228" stroke="rgba(200,169,81,.18)" stroke-width="1" stroke-dasharray="5 4" class="c-line b"/>
-        <path d="M208 110 Q178 178 205 218" stroke="rgba(59,130,246,.14)" stroke-width=".8" stroke-dasharray="3 5" class="c-line c"/>
-        <circle cx="230" cy="165" r="2" fill="rgba(200,169,81,.20)" class="p-f"/>
-        <circle cx="250" cy="200" r="1.5" fill="rgba(59,130,246,.16)" class="p-f" style="animation-delay:2.3s"/>
-        <circle cx="220" cy="250" r="1.8" fill="rgba(200,169,81,.14)" class="p-f" style="animation-delay:4.6s"/>
-        <circle cx="195" cy="116" r="5" fill="#C8A951" class="n-cn"/>
-        <circle cx="195" cy="116" r="14" fill="none" stroke="rgba(200,169,81,.08)" stroke-width="1"/>
-        <circle cx="230" cy="215" r="3.5" fill="#3B82F6" opacity=".55"/>
-        <circle cx="230" cy="215" r="9" fill="none" stroke="rgba(59,130,246,.06)" stroke-width="1"/>
-        <circle cx="248" cy="230" r="5" fill="#60A5FA" class="n-th"/>
-        <circle cx="248" cy="230" r="14" fill="none" stroke="rgba(96,165,250,.08)" stroke-width="1"/>
-        <text x="195" y="94" text-anchor="middle" fill="rgba(200,169,81,.40)" font-size="10" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">CN</text>
-        <text x="248" y="262" text-anchor="middle" fill="rgba(96,165,250,.40)" font-size="10" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">TH</text>
-      </svg>
+    <div class="hero-visual rv rv-2">
+      <div class="hv-container">
+        <span class="hv-orb a"></span><span class="hv-orb b"></span>
+        <svg viewBox="0 0 460 460" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:100%;position:relative;z-index:1">
+          <circle cx="230" cy="215" r="205" stroke="rgba(255,255,255,.025)" stroke-width="1"/>
+          <circle cx="230" cy="215" r="150" stroke="rgba(255,255,255,.018)" stroke-width=".7" stroke-dasharray="3 10"/>
+          <circle cx="230" cy="215" r="95" stroke="rgba(255,255,255,.02)" stroke-width=".6" stroke-dasharray="2 8"/>
+          <ellipse cx="230" cy="215" rx="205" ry="66" stroke="rgba(255,255,255,.015)" stroke-width=".5"/>
+          <line x1="25" y1="215" x2="435" y2="215" stroke="rgba(255,255,255,.012)" stroke-width=".5"/>
+          <line x1="230" y1="10" x2="230" y2="420" stroke="rgba(255,255,255,.012)" stroke-width=".5"/>
+          <circle cx="155" cy="118" r="2" fill="rgba(255,255,255,.06)"/><circle cx="322" cy="262" r="1.5" fill="rgba(255,255,255,.04)"/><circle cx="106" cy="272" r="1.3" fill="rgba(255,255,255,.035)"/><circle cx="338" cy="150" r="1.7" fill="rgba(255,255,255,.04)"/>
+          <path d="M194 116 Q268 160 244 214" stroke="rgba(200,169,81,.22)" stroke-width="1.3" stroke-dasharray="5 4" class="cl"/>
+          <path d="M244 214 Q260 234 270 230" stroke="rgba(200,169,81,.14)" stroke-width="1" stroke-dasharray="5 4" class="cl b"/>
+          <path d="M210 108 Q176 180 206 218" stroke="rgba(59,130,246,.12)" stroke-width=".8" stroke-dasharray="3 5" class="cl c"/>
+          <circle cx="232" cy="162" r="2" fill="rgba(200,169,81,.16)" class="fp"/>
+          <circle cx="252" cy="202" r="1.5" fill="rgba(59,130,246,.12)" class="fp" style="animation-delay:2.3s"/>
+          <circle cx="218" cy="252" r="1.8" fill="rgba(200,169,81,.10)" class="fp" style="animation-delay:4.6s"/>
+          <circle cx="194" cy="114" r="5" fill="#C8A951" class="nd-cn"/><circle cx="194" cy="114" r="14" fill="none" stroke="rgba(200,169,81,.07)" stroke-width="1"/>
+          <circle cx="230" cy="215" r="3.5" fill="#3B82F6" opacity=".5"/><circle cx="230" cy="215" r="9" fill="none" stroke="rgba(59,130,246,.05)" stroke-width="1"/>
+          <circle cx="250" cy="232" r="5" fill="#60A5FA" class="nd-th"/><circle cx="250" cy="232" r="14" fill="none" stroke="rgba(96,165,250,.07)" stroke-width="1"/>
+          <text x="194" y="92" text-anchor="middle" fill="rgba(200,169,81,.35)" font-size="10" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">CN</text>
+          <text x="250" y="264" text-anchor="middle" fill="rgba(96,165,250,.35)" font-size="10" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">TH</text>
+        </svg>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ SERVICES ════════════ -->
+<!-- =========== CORE SERVICES =========== -->
 <section class="sec sec-alt" id="services">
   <div class="ctr">
-    <div class="sec-head rv">
-      <div class="sec-kicker">Services</div>
-      <h2 class="sec-title">Everything you need to operate<br>in Thailand — under one partner.</h2>
-      <p class="sec-sub">Four interconnected capabilities designed to reduce risk and accelerate your market entry.</p>
+    <div class="sec-intro rv">
+      <div class="sec-kicker">Core Services</div>
+      <h2 class="sec-heading">Everything you need to operate<br>in Thailand — under one partner.</h2>
+      <p class="sec-subtitle">Four interconnected capabilities. No middlemen. No blind introductions. Just real execution — by people on the ground in Bangkok.</p>
     </div>
     <div class="svc-grid">
       <div class="svc-card rv">
@@ -279,100 +310,64 @@
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 8h20" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="8" x2="8" y2="22" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="15" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg>
         </div>
         <h3>Overseas Warehouse</h3>
-        <p class="svc-hint">Your products, stored and shipped locally — with partners we've personally vetted.</p>
+        <p class="svc-tag">Your products, stored and shipped locally — with partners we've personally vetted and visited.</p>
         <div class="svc-list">
           <span>Warehouse matching, site visits &amp; contract negotiation</span>
-          <span>Inventory management &amp; daily fulfillment operations</span>
+          <span>Daily fulfillment operations &amp; inventory management</span>
           <span>One-piece drop-ship &amp; nationwide last-mile delivery</span>
         </div>
-        <a href="#contact" class="svc-link">Discuss your logistics needs <span>&rarr;</span></a>
+        <a href="#contact" class="svc-link">Discuss logistics <span>&rarr;</span></a>
       </div>
-
-      <div class="svc-card rv rv-d1">
+      <div class="svc-card rv rv-1">
         <div class="svc-icon" style="background:rgba(59,130,246,.06);color:#3B82F6">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="5" r="2" fill="currentColor" opacity=".5"/></svg>
         </div>
         <h3>Creator Network</h3>
-        <p class="svc-hint">Thai consumers trust Thai voices. We connect you with creators who deliver real engagement — not vanity metrics.</p>
+        <p class="svc-tag">Thai consumers trust Thai voices. We connect you with creators who deliver real engagement — not vanity metrics.</p>
         <div class="svc-list">
           <span>UGC creators matched by audience data &amp; past performance</span>
-          <span>KOL &amp; TikTok influencer campaigns with transparent reporting</span>
-          <span>Short-video content production &amp; live commerce operations</span>
+          <span>KOL &amp; TikTok campaigns with transparent reporting</span>
+          <span>Content production &amp; live commerce operations</span>
         </div>
-        <a href="#contact" class="svc-link">Find the right creators <span>&rarr;</span></a>
+        <a href="#contact" class="svc-link">Find creators <span>&rarr;</span></a>
       </div>
-
-      <div class="svc-card rv rv-d2">
+      <div class="svc-card rv rv-2">
         <div class="svc-icon" style="background:rgba(139,92,246,.06);color:#A78BFA">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
         </div>
         <h3>Business Support</h3>
-        <p class="svc-hint">Bilingual team on the ground — handling communication, negotiation, and local operations so nothing gets lost in translation.</p>
+        <p class="svc-tag">Bilingual team on the ground — handling communication, negotiation, and operations so nothing gets lost in translation.</p>
         <div class="svc-list">
           <span>Thai market research &amp; competitive intelligence</span>
           <span>China-Thailand bilingual negotiation &amp; partner vetting</span>
-          <span>Operational setup: from incorporation to daily execution</span>
+          <span>Operational setup: incorporation to daily execution</span>
         </div>
-        <a href="#contact" class="svc-link">Tell us about your business <span>&rarr;</span></a>
+        <a href="#contact" class="svc-link">Discuss your business <span>&rarr;</span></a>
       </div>
-
-      <div class="svc-card rv rv-d3">
+      <div class="svc-card rv rv-3">
         <div class="svc-icon" style="background:rgba(6,182,212,.06);color:#22D3EE">
           <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
         </div>
         <h3>Market Entry</h3>
-        <p class="svc-hint">Not sure where to start? We build your Thailand launch plan — from feasibility to first sale.</p>
+        <p class="svc-tag">Not sure where to start? We build your Thailand launch plan — from feasibility study to first sale.</p>
         <div class="svc-list">
-          <span>Market feasibility study &amp; category opportunity assessment</span>
-          <span>Go-to-market roadmap with pricing, channel &amp; launch strategy</span>
-          <span>Regulatory guidance &amp; local entity incorporation support</span>
+          <span>Market feasibility study &amp; category assessment</span>
+          <span>Go-to-market roadmap with pricing &amp; channel strategy</span>
+          <span>Regulatory guidance &amp; entity incorporation support</span>
         </div>
-        <a href="#contact" class="svc-link">Get a market entry assessment <span>&rarr;</span></a>
+        <a href="#contact" class="svc-link">Get an assessment <span>&rarr;</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ PROCESS ════════════ -->
-<section class="sec" id="process">
+<!-- =========== WHY THAIBRIDGE =========== -->
+<section class="sec" id="why">
   <div class="ctr">
-    <div class="sec-head rv">
-      <div class="sec-kicker">Process</div>
-      <h2 class="sec-title">From first conversation to<br>full-scale operations.</h2>
-      <p class="sec-sub">Every step is based on real experience helping Chinese brands enter Thailand. No theory. No templates. Just what actually works.</p>
-    </div>
-    <div class="tl-wrap">
-      <div class="tl-step rv">
-        <div class="tl-num">STEP 01</div>
-        <h4>Consultation</h4>
-        <p>We learn about your brand, goals, and concerns. A real conversation — no slides, no pitch — ending with actionable first insights about your fit for the Thai market.</p>
-      </div>
-      <div class="tl-step rv rv-d1">
-        <div class="tl-num">STEP 02</div>
-        <h4>Strategy</h4>
-        <p>Together we design a tailored market entry plan covering logistics, marketing, and partnerships — with clear milestones, timelines, and resource allocation.</p>
-      </div>
-      <div class="tl-step rv rv-d2">
-        <div class="tl-num">STEP 03</div>
-        <h4>Execution</h4>
-        <p>Our Bangkok-based team activates the plan — warehouse onboarding, creator campaigns, partner introductions. You get weekly updates and a single point of contact.</p>
-      </div>
-      <div class="tl-step rv rv-d3">
-        <div class="tl-num">STEP 04</div>
-        <h4>Long-Term Partnership</h4>
-        <p>We stay embedded as your local operating team, continuously optimizing operations, identifying new opportunities, and navigating market changes.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════════ WHY ════════════ -->
-<section class="sec sec-alt" id="why">
-  <div class="ctr">
-    <div class="sec-head rv">
+    <div class="sec-intro rv">
       <div class="sec-kicker">Why ThaiBridge</div>
-      <h2 class="sec-title">Built for the new wave of<br>cross-border business.</h2>
-      <p class="sec-sub">Not the biggest. Not the cheapest. But the partner that takes your Thailand success personally.</p>
+      <h2 class="sec-heading">Not the biggest. Not the cheapest.<br>But the partner that takes your success personally.</h2>
+      <p class="sec-subtitle">Four principles that define every relationship we build — and every introduction we make.</p>
     </div>
     <div class="why-grid">
       <div class="why-card rv">
@@ -380,105 +375,107 @@
           <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg>
         </div>
         <h4>Verified Local Resources</h4>
-        <p class="why-tag">真实本地资源</p>
-        <p>Every partner we connect you with has been personally visited and vetted. No directories, no blind introductions — only relationships we would trust for our own business.</p>
+        <p class="why-zh">真实本地资源</p>
+        <p>Every partner we introduce has been personally visited. No paid directories. No blind introductions. Only relationships we'd trust with our own business.</p>
       </div>
-      <div class="why-card rv rv-d1">
+      <div class="why-card rv rv-1">
         <div class="why-icon" style="background:rgba(59,130,246,.06);color:#3B82F6">
           <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg>
         </div>
         <h4>Market Insight</h4>
-        <p class="why-tag">本地市场洞察</p>
-        <p>Deep understanding of Thai consumer behavior, competitive dynamics, and regulatory landscape — so your market entry is based on data, not assumptions.</p>
+        <p class="why-zh">本地市场洞察</p>
+        <p>Deep understanding of Thai consumer behavior, competitive dynamics, and regulations — so your strategy is based on data, not assumptions.</p>
       </div>
-      <div class="why-card rv rv-d2">
+      <div class="why-card rv rv-2">
         <div class="why-icon" style="background:rgba(139,92,246,.06);color:#A78BFA">
           <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="12" r="1.5" fill="currentColor" opacity=".6"/><circle cx="15" cy="12" r="1.5" fill="currentColor" opacity=".6"/><path d="M9 16l2-2 2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
         </div>
         <h4>AI-Assisted Workflow</h4>
-        <p class="why-tag">AI 提升效率</p>
-        <p>We embed AI into research, documentation, and workflow — delivering faster intelligence and smoother cross-border operations than traditional agencies.</p>
+        <p class="why-zh">AI 提升效率</p>
+        <p>We embed AI into research, documentation, and workflow — delivering faster intelligence and smoother cross-border operations than traditional firms.</p>
       </div>
-      <div class="why-card rv rv-d3">
+      <div class="why-card rv rv-3">
         <div class="why-icon" style="background:rgba(6,182,212,.06);color:#22D3EE">
           <svg width="19" height="19" fill="none" viewBox="0 0 24 24"><path d="M12 2l3 6 6.5 1-4.7 4.6 1.1 6.4-5.9-3.1-5.9 3.1 1.1-6.4L2.5 9 9 8l3-6z" stroke="currentColor" stroke-width="1.6"/></svg>
         </div>
         <h4>Long-Term Partnership</h4>
-        <p class="why-tag">长期合作</p>
-        <p>Market entry is just the beginning. We remain your local operating partner — continuously optimizing, scaling what works, and navigating changes for years.</p>
+        <p class="why-zh">长期合作</p>
+        <p>Market entry is just the beginning. We stay embedded as your local operating team — optimizing, scaling, and navigating changes for years.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ ABOUT ════════════ -->
-<section class="sec" id="about">
+<!-- =========== HOW WE WORK =========== -->
+<section class="sec sec-alt" id="process">
   <div class="ctr">
-    <div class="sec-head rv">
-      <div class="sec-kicker">About ThaiBridge</div>
-      <h2 class="sec-title">Bridging China &amp; Thailand.</h2>
+    <div class="sec-intro rv">
+      <div class="sec-kicker">How We Work</div>
+      <h2 class="sec-heading">From first conversation to<br>full-scale operations.</h2>
+      <p class="sec-subtitle">Every step is based on real experience. No theory. No templates. Just what actually works in Thailand.</p>
     </div>
-    <div class="about-text rv">
-      <p>
-        We are a bilingual operations team <span class="hl">based in Bangkok, Thailand</span>.<br>
-        We understand Chinese business culture because we come from it.<br>
-        We understand Thai local reality because we live in it.<br><br>
-        <span class="hl">We don't sell reports. We don't charge for introductions.</span><br>
-        We earn trust through execution — personally vetting every partner,<br>
-        staying involved through every negotiation, and measuring ourselves<br>
-        by the results you achieve in the Thai market.<br><br>
-        <span class="hl">Our mission is not to become another agency.<br>Our mission is to become your long-term local partner.</span>
-      </p>
+    <div class="tl">
+      <div class="tl-step rv"><div class="tl-num">STEP 01</div><h4>Consultation</h4><p>We learn about your brand, goals, and concerns. A real conversation — no slides, no pitch — ending with actionable insights about your fit for the Thai market.</p></div>
+      <div class="tl-step rv rv-1"><div class="tl-num">STEP 02</div><h4>Strategy</h4><p>Together we design a tailored plan covering logistics, marketing, and partnerships — with clear milestones, timelines, and resource allocation.</p></div>
+      <div class="tl-step rv rv-2"><div class="tl-num">STEP 03</div><h4>Execution</h4><p>Our Bangkok-based team activates the plan — warehouse onboarding, creator campaigns, partner introductions. Weekly updates. Single point of contact.</p></div>
+      <div class="tl-step rv rv-3"><div class="tl-num">STEP 04</div><h4>Long-Term Partnership</h4><p>We stay embedded as your local operating team, continuously optimizing operations and identifying new growth opportunities.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ════════════ CONTACT ════════════ -->
-<section class="sec sec-alt" id="contact">
+<!-- =========== INDUSTRIES =========== -->
+<section class="sec" id="industries">
   <div class="ctr">
-    <div class="sec-head rv">
-      <div class="sec-kicker">Contact</div>
-      <h2 class="sec-title">Let's talk about Thailand.</h2>
-      <p class="sec-sub">No commitment. No sales pitch. A real conversation about your goals — and whether we can help.</p>
+    <div class="sec-intro rv">
+      <div class="sec-kicker">Industries We Serve</div>
+      <h2 class="sec-heading">From consumer brands to<br>industrial manufacturers.</h2>
+      <p class="sec-subtitle">If you have a product and you're serious about Thailand — we have the local infrastructure and relationships to help.</p>
     </div>
-    <div class="contact-layout">
+    <div class="ind-grid">
+      <div class="ind-card rv"><span class="ind-icon">🛍️</span><h4>Consumer Brands</h4><p>D2C and retail brands building presence and trust with Thai consumers through local operations.</p></div>
+      <div class="ind-card rv rv-1"><span class="ind-icon">📦</span><h4>Cross-border E-commerce</h4><p>Sellers on Shopee, Lazada, TikTok Shop who need local warehousing, fulfillment, and creator marketing.</p></div>
+      <div class="ind-card rv rv-2"><span class="ind-icon">🏭</span><h4>Manufacturers &amp; OEM</h4><p>Factories seeking distribution partners, market feedback, and a structured Thailand entry strategy.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== TRUST =========== -->
+<section class="sec sec-alt" id="trust">
+  <div class="ctr">
+    <div class="sec-intro rv">
+      <div class="sec-kicker">Your Trusted Local Partner</div>
+      <h2 class="sec-heading">We take your Thailand<br>success personally.</h2>
+      <p class="sec-subtitle">Because every introduction we make carries our reputation. If a partner isn't good enough for us, they'll never reach you.</p>
+    </div>
+    <div class="trust-wrap">
+      <div class="trust-block rv"><div class="trust-num">Bangkok</div><div class="trust-label">Based in Thailand</div><p class="trust-desc">Our team lives and works here. We don't operate remotely — we're on the ground, every day.</p></div>
+      <div class="trust-block rv rv-1"><div class="trust-num">Bilingual</div><div class="trust-label">China &amp; Thailand</div><p class="trust-desc">We speak both languages and understand both business cultures. No lost-in-translation moments.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- =========== CONTACT =========== -->
+<section class="sec" id="contact">
+  <div class="ctr">
+    <div class="sec-intro rv">
+      <div class="sec-kicker">Contact</div>
+      <h2 class="sec-heading">Start with a free<br>consultation.</h2>
+      <p class="sec-subtitle">No commitment. No sales pitch. Just a real conversation about your goals — and whether we can help.</p>
+    </div>
+    <div class="ct-layout">
       <div class="rv">
-        <div class="ci-grid">
-          <div class="ci-card">
-            <div class="ci-icon" style="background:rgba(200,169,81,.06);color:#C8A951">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ci-label">Email</div>
-            <div class="ci-value">contact@thaibridge.asia</div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon" style="background:rgba(59,130,246,.06);color:#3B82F6">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ci-label">Website</div>
-            <div class="ci-value">thaibridge.asia</div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon" style="background:rgba(139,92,246,.06);color:#A78BFA">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ci-label">LINE / WeChat</div>
-            <div class="ci-value">Available for partners</div>
-          </div>
-          <div class="ci-card">
-            <div class="ci-icon" style="background:rgba(6,182,212,.06);color:#22D3EE">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div class="ci-label">Hours</div>
-            <div class="ci-value">Mon–Fri, 9:00–18:00 ICT</div>
-          </div>
+        <div class="ct-grid">
+          <div class="ct-card"><div class="ct-icon" style="background:rgba(200,169,81,.06);color:#C8A951"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-label">Email</div><div class="ct-value">contact@thaibridge.asia</div></div>
+          <div class="ct-card"><div class="ct-icon" style="background:rgba(59,130,246,.06);color:#3B82F6"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-label">Website</div><div class="ct-value">thaibridge.asia</div></div>
+          <div class="ct-card"><div class="ct-icon" style="background:rgba(139,92,246,.06);color:#A78BFA"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-label">LINE / WeChat</div><div class="ct-value">Available for partners</div></div>
+          <div class="ct-card"><div class="ct-icon" style="background:rgba(6,182,212,.06);color:#22D3EE"><svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="ct-label">Hours</div><div class="ct-value">Mon–Fri, 9:00–18:00 ICT</div></div>
         </div>
       </div>
-      <div class="cta-panel rv rv-d1">
-        <h3>Start with a Free Consultation</h3>
-        <p class="cta-desc">Tell us about your brand and what you want to achieve in Thailand. We'll prepare a tailored assessment — at no cost — within 24 hours.</p>
-        <p class="cta-live"><span class="cta-dot"></span> Based in Bangkok. Available now.</p>
-        <div class="cta-btns">
+      <div class="ct-panel rv rv-1">
+        <h3>Book a Free Consultation</h3>
+        <p class="ct-desc">Tell us about your brand and what you want to achieve in Thailand. We'll prepare a tailored assessment — at no cost — within 24 hours.</p>
+        <p class="ct-status"><span class="dot"></span> Based in Bangkok. Available now.</p>
+        <div class="ct-btns">
           <a href="mailto:contact@thaibridge.asia" class="btn btn-primary">Start the Conversation <span>&rarr;</span></a>
           <a href="mailto:contact@thaibridge.asia" class="btn btn-ghost">Send an Email</a>
         </div>
@@ -487,50 +484,35 @@
   </div>
 </section>
 
-<!-- ════════════ FOOTER ════════════ -->
+<!-- =========== FOOTER =========== -->
 <footer class="ft">
   <div class="ft-inner">
     <div class="ft-top">
       <div>
-        <div class="ft-b"><span class="ft-m">TB</span>ThaiBridge</div>
-        <p class="ft-desc">Bridging China and Thailand through trusted local operations and real partnerships.</p>
+        <div class="ft-brand"><span class="ft-mark">TB</span>ThaiBridge</div>
+        <p class="ft-desc">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p>
       </div>
-      <div class="ft-col">
-        <h4>Services</h4>
-        <a href="#services">Overseas Warehouse</a>
-        <a href="#services">Creator Network</a>
-        <a href="#services">Business Support</a>
-        <a href="#services">Market Entry</a>
-      </div>
-      <div class="ft-col">
-        <h4>Company</h4>
-        <a href="#about">About</a>
-        <a href="#why">Why ThaiBridge</a>
-        <a href="#process">How We Work</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="ft-col">
-        <h4>Contact</h4>
-        <a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a>
-        <a href="https://thaibridge.asia">thaibridge.asia</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">WeChat</a>
-        <a href="#">LINE</a>
-      </div>
+      <div class="ft-col"><h4>Services</h4><a href="#services">Overseas Warehouse</a><a href="#services">Creator Network</a><a href="#services">Business Support</a><a href="#services">Market Entry</a></div>
+      <div class="ft-col"><h4>Company</h4><a href="#why">Why ThaiBridge</a><a href="#process">How We Work</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
+      <div class="ft-col"><h4>Contact</h4><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a><a href="#">LINE</a></div>
     </div>
-    <div class="ft-bot">
-      <span>&copy; 2026 ThaiBridge. All rights reserved.</span>
-      <span>Bangkok, Thailand</span>
-    </div>
+    <div class="ft-bot"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div>
   </div>
 </footer>
 
 <script>
-  const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.10,rootMargin:'0px 0px -24px 0px'});
+  // Scroll reveal
+  const ob=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')}),{threshold:.08,rootMargin:'0px 0px -20px 0px'});
   document.querySelectorAll('.rv').forEach(el=>ob.observe(el));
-  const nav=document.getElementById('nav');nav.classList.toggle('sc',window.scrollY>30);
-  window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>30),{passive:true});
+
+  // Nav scroll state
+  const nav=document.getElementById('nav');
+  window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',window.scrollY>40),{passive:true});
+
+  // Smooth scroll
   document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth',block:'start'})}}));
+
+  // Mouse tracking on service cards
   document.querySelectorAll('.svc-card').forEach(c=>c.addEventListener('mousemove',e=>{const r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')}));
 </script>
 </body>
