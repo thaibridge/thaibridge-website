@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
 Sitemap: https://thaibridge.asia/sitemap.xml
+
+# Crawl-delay: 1 (uncomment if needed for shared hosting)

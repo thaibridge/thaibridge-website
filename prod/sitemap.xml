@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://thaibridge.asia/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
-  <url><loc>https://thaibridge.asia/services.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/services.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/warehouse.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/creator-network.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/business-matching.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/market-research.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/local-execution.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/case-study-01.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://thaibridge.asia/process.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
   <url><loc>https://thaibridge.asia/about.html</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
-  <url><loc>https://thaibridge.asia/contact.html</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://thaibridge.asia/contact.html</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
 </urlset>
