@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Local Execution & Operations — ThaiBridge | Your local team in Thailand</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='5' y='10' width='8' height='33' rx='2.5' fill='%23EDF1F7'/%3E%3Crect x='22' y='10' width='8' height='33' rx='2.5' fill='%23EDF1F7'/%3E%3Cpath d='M9 13 Q17.5 -2 26 13' fill='none' stroke='%23C8A951' stroke-width='5.5' stroke-linecap='round'/%3E%3C/svg%3E">
+<meta name="description" content="ThaiBridge stays and executes as your local operating team in Bangkok. Weekly reporting, bilingual execution, monthly retainer. Scale up or down as needed.">
+<meta property="og:title" content="Local Execution & Operations — ThaiBridge">
+<meta property="og:description" content="Your local operating team in Bangkok. Bilingual execution, weekly reporting, monthly retainer. Scale up or down as needed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://thaibridge.asia/local-execution">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Local Execution & Operations — ThaiBridge">
+<meta name="twitter:description" content="Embedded local operating team in Bangkok. We don't hand you a report and leave — we stay and execute.">
+<link rel="canonical" href="https://thaibridge.asia/local-execution">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Local Execution & Operations — ThaiBridge",
+  "provider": { "@type": "Organization", "name": "ThaiBridge", "url": "https://thaibridge.asia" },
+  "description": "Embedded local operating team in Bangkok providing bilingual execution across warehouse, creator, business matching, and market research workstreams on a monthly retainer.",
+  "areaServed": { "@type": "Country", "name": "Thailand" }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+  :root{
+    --bg:#040810;--bg2:#060C1A;--sf:#0A1124;--sf2:#0D152E;
+    --br:rgba(255,255,255,.045);--br2:rgba(255,255,255,.065);
+    --t1:#EDF1F7;--t2:#8892A6;--t3:#495266;
+    --g:#C8A951;--gd:rgba(200,169,81,.055);--gm:rgba(200,169,81,.10);
+    --bl:#3B82F6;--bld:rgba(59,130,246,.05);
+    --r:10px;--rl:18px;--e:cubic-bezier(.23,.6,.35,1);
+    --nav-h:56px;
+  }
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--t1);line-height:1.6;-webkit-font-smoothing:antialiased;font-weight:400;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+
+  /* Ambient */
+  .amb{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .a-o{position:absolute;border-radius:50%;filter:blur(220px)}
+  .a-o.a{width:1000px;height:1000px;background:radial-gradient(circle,rgba(59,130,246,.04),transparent 70%);top:-460px;right:-320px}
+  .a-o.b{width:760px;height:760px;background:radial-gradient(circle,rgba(200,169,81,.018),transparent 70%);bottom:-360px;left:-300px}
+  .a-g{position:absolute;inset:0;opacity:.01;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:80px 80px}
+  .a-n{position:absolute;inset:0;opacity:.012;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+  /* Nav */
+  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;width:min(94%,1080px);height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;padding:0 6px 0 22px;background:rgba(10,18,36,.72);backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);border:1px solid var(--br);border-radius:14px;transition:all .5s}
+  .nav.sc{background:rgba(10,18,36,.94);border-color:var(--br2);box-shadow:0 4px 64px rgba(0,0,0,.50)}
+  .nav-B{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px}
+  .nav-M{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:800;color:#040810}
+  .nav-L{display:flex;align-items:center;gap:2px}
+  .nav-L a{font-size:14px;font-weight:500;color:var(--t2);padding:7px 16px;border-radius:8px;transition:all .2s}
+  .nav-L a:hover,.nav-L a.active{color:var(--t1);background:rgba(255,255,255,.035)}
+  .nav-L a.active{background:rgba(255,255,255,.05)}
+  .nav-L .nav-CTA{margin-left:12px;padding:8px 20px;font-size:14px;font-weight:600;color:#040810!important;background:var(--g);border-radius:9px;transition:all .3s var(--e)}
+  .nav-L .nav-CTA:hover{background:#D4B85E!important;box-shadow:0 0 36px rgba(200,169,81,.15);transform:translateY(-1px)}
+
+  /* Shared */
+  .sec{position:relative;z-index:1;padding:200px 8%}
+  .sec-alt{background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
+  .ctr{max-width:1040px;margin:0 auto}
+  .sh{text-align:center;margin-bottom:120px}
+  .sk{font-size:11px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--g);margin-bottom:20px}
+  .st{font-size:clamp(30px,3.8vw,46px);font-weight:700;letter-spacing:-.8px;line-height:1.12;margin-bottom:20px}
+  .ss{max-width:480px;margin:0 auto;font-size:15.5px;color:var(--t2);line-height:1.75;font-weight:400}
+  .rv{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s var(--e)}
+  .rv.in{opacity:1;transform:translateY(0)}
+  .rv1{transition-delay:.08s}.rv2{transition-delay:.16s}.rv3{transition-delay:.24s}.rv4{transition-delay:.32s}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:9px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .3s var(--e);position:relative;overflow:hidden}
+  .btn-gold{background:var(--g);color:#040810;box-shadow:0 1px 8px rgba(200,169,81,.04)}
+  .btn-gold:hover{background:#D4B85E;box-shadow:0 4px 20px rgba(200,169,81,.12);transform:translateY(-1px)}
+  .btn-gold::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.08) 50%,transparent 60%);transform:translateX(-100%);transition:transform .5s}
+  .btn-gold:hover::after{transform:translateX(100%)}
+  .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.09);color:var(--t1)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.012);transform:translateY(-1px)}
+
+  /* Page Hero */
+  .page-hero{position:relative;z-index:1;padding:200px 8% 112px;text-align:center}
+  .page-hero .ph-badge{display:inline-flex;align-items:center;gap:12px;font-size:11px;font-weight:600;letter-spacing:3px;color:var(--g);text-transform:uppercase;margin-bottom:40px}
+  .page-hero .ph-badge::before{content:'';width:16px;height:1px;background:var(--g);opacity:.25}
+  .page-hero h1{font-size:clamp(34px,4.4vw,58px);font-weight:700;line-height:1.08;letter-spacing:-1.2px;margin-bottom:24px;max-width:860px;margin-left:auto;margin-right:auto}
+  .page-hero h1 em{font-style:normal;background:linear-gradient(135deg,#C8A951 0%,#E2CC7A 50%,#C8A951 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .page-hero .ph-desc{max-width:560px;margin:0 auto 36px;font-size:16px;color:var(--t2);line-height:1.75}
+  .page-hero .ph-zh{font-size:15px;color:var(--g);margin-bottom:40px;font-weight:500;letter-spacing:-.2px}
+
+  /* Problem Cards */
+  .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px;margin:0 auto}
+  .problem-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:36px 32px;transition:all .35s var(--e)}
+  .problem-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.07);box-shadow:0 10px 32px rgba(0,0,0,.20);background:var(--sf2)}
+  .problem-card .p-num{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--g);margin-bottom:14px;text-transform:uppercase}
+  .problem-card h4{font-size:16px;font-weight:600;margin-bottom:8px;letter-spacing:-.2px}
+  .problem-card p{font-size:13.5px;color:var(--t2);line-height:1.65}
+
+  /* Comparison Cards (Why ThaiBridge) */
+  .cmp-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:960px;margin:0 auto}
+  .cmp-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:40px 36px;transition:all .35s var(--e)}
+  .cmp-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.07);box-shadow:0 10px 32px rgba(0,0,0,.20)}
+  .cmp-card h4{font-size:17px;font-weight:600;margin-bottom:20px;letter-spacing:-.2px;color:var(--g)}
+  .cmp-row{display:flex;flex-direction:column;gap:4px;margin-bottom:16px}
+  .cmp-row:last-child{margin-bottom:0}
+  .cmp-row .lbl{font-size:10px;font-weight:600;letter-spacing:1.8px;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
+  .cmp-row .txt{font-size:13.5px;color:var(--t2);line-height:1.6}
+  .cmp-row .txt.win{color:var(--g);font-weight:500}
+
+  /* Workflow Steps */
+  .wf-steps{max-width:800px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+  .wf-step{display:flex;gap:28px;padding:32px 0;position:relative}
+  .wf-step::after{content:'';position:absolute;left:24px;top:80px;bottom:0;width:1px;background:linear-gradient(180deg,rgba(200,169,81,.12),rgba(200,169,81,.02))}
+  .wf-step:last-child::after{display:none}
+  .wf-num{width:48px;height:48px;border-radius:12px;background:rgba(200,169,81,.08);border:1px solid rgba(200,169,81,.12);display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:700;color:var(--g);flex-shrink:0}
+  .wf-body h4{font-size:17px;font-weight:600;margin-bottom:4px;letter-spacing:-.2px}
+  .wf-body p{font-size:13.5px;color:var(--t2);line-height:1.65;max-width:560px}
+
+  /* Deliverables */
+  .del-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px;margin:0 auto}
+  .del-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:36px 28px;text-align:center;transition:all .35s var(--e)}
+  .del-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.07);box-shadow:0 10px 32px rgba(0,0,0,.20)}
+  .del-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;background:rgba(200,169,81,.055);color:var(--g)}
+  .del-card h4{font-size:15px;font-weight:600;margin-bottom:4px;letter-spacing:-.2px}
+  .del-card p{font-size:12.5px;color:var(--t2);line-height:1.55}
+
+  /* Best For */
+  .best-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:960px;margin:0 auto}
+  .best-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:40px 32px;text-align:center;transition:all .35s var(--e)}
+  .best-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.07);box-shadow:0 10px 32px rgba(0,0,0,.20)}
+  .best-card .b-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px;background:rgba(59,130,246,.055);color:#3B82F6}
+  .best-card h4{font-size:16px;font-weight:600;margin-bottom:6px;letter-spacing:-.2px}
+  .best-card p{font-size:13px;color:var(--t2);line-height:1.6}
+
+  /* FAQ */
+  .faq-list{max-width:740px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+  .faq-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);overflow:hidden;transition:all .3s var(--e);cursor:pointer}
+  .faq-card:hover{border-color:rgba(200,169,81,.07)}
+  .faq-card.open{background:var(--sf2);border-color:rgba(200,169,81,.08)}
+  .faq-q{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:24px 28px;font-size:15.5px;font-weight:600;letter-spacing:-.2px;transition:color .2s}
+  .faq-card.open .faq-q{color:var(--g)}
+  .faq-arrow{font-size:13px;color:var(--t3);transition:transform .3s var(--e);flex-shrink:0;margin-top:3px}
+  .faq-card.open .faq-arrow{transform:rotate(45deg);color:var(--g)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s var(--e)}
+  .faq-card.open .faq-a{max-height:300px}
+  .faq-a-inner{padding:0 28px 24px;font-size:14px;color:var(--t2);line-height:1.75}
+
+  /* CTA Section */
+  .cta-sec{text-align:center}
+  .cta-sec .cta-box{background:var(--sf);border:1px solid rgba(200,169,81,.06);border-radius:var(--rl);padding:64px 44px;max-width:640px;margin:0 auto}
+  .cta-sec .cta-box h3{font-size:27px;font-weight:700;letter-spacing:-.45px;margin-bottom:14px}
+  .cta-sec .cta-box p{font-size:15px;color:var(--t2);margin-bottom:10px;line-height:1.7}
+  .cta-sec .cta-box .live{font-size:12px;color:var(--t3);margin-bottom:40px;display:flex;align-items:center;gap:8px;justify-content:center}
+  .live-d{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.18)}
+
+  /* Footer */
+  footer{border-top:1px solid var(--br);padding:80px 8% 40px;position:relative;z-index:1}
+  .ft-i{max-width:1040px;margin:0 auto}
+  .ft-t{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:72px;margin-bottom:56px}
+  .ft-B{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
+  .ft-M{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#040810}
+  .ft-desc{font-size:13px;color:var(--t3);line-height:1.7;max-width:240px}
+  .ft-h{font-size:11px;font-weight:600;letter-spacing:1.8px;color:var(--t2);margin-bottom:22px;text-transform:uppercase}
+  .ft-l{display:flex;flex-direction:column;gap:8px}
+  .ft-l a{font-size:13.5px;color:var(--t3);transition:color .2s}
+  .ft-l a:hover{color:var(--t1)}
+  .ft-x{padding-top:32px;border-top:1px solid var(--br);display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--t3)}
+
+  @media(max-width:860px){
+    .nav{top:8px;left:3%;transform:none;width:94%;padding:0 4px 0 14px;border-radius:12px;height:48px}
+    .nav-L a{font-size:12px;padding:5px 7px}.nav-L .nav-CTA{padding:7px 13px;font-size:12px!important}
+    .page-hero{padding:160px 6% 80px}
+    .problem-grid,.del-grid,.best-grid,.cmp-grid{grid-template-columns:1fr}
+    .wf-step{gap:20px}.wf-num{width:40px;height:40px;font-size:16px}
+    .ft-t{grid-template-columns:1fr 1fr;gap:40px}.ft-x{flex-direction:column;gap:12px;text-align:center}
+    .sec{padding:140px 6%}
+  }
+  @media(max-width:500px){
+    .page-hero h1{font-size:32px}
+    .ft-t{grid-template-columns:1fr}
+    .cta-sec .cta-box{padding:40px 24px}
+    .cta-sec .cta-box h3{font-size:22px}
+  }
+</style>
+</head>
+<body>
+
+<div class="amb"><span class="a-o a"></span><span class="a-o b"></span><span class="a-g"></span><span class="a-n"></span></div>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-B"><span class="nav-M">TB</span>ThaiBridge</a>
+  <div class="nav-L">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="process.html">Process</a>
+    <a href="about.html">About</a>
+    <a href="contact.html" class="nav-CTA">Book a Call</a>
+  </div>
+</nav>
+
+<!-- ① Hero -->
+<section class="page-hero">
+  <div class="ph-badge">Local Execution &amp; Operations</div>
+  <h1>We don't hand you a report and leave. We <em>stay and execute</em> — as your local operating team in Bangkok.</h1>
+  <p class="ph-desc">One team. One point of contact. Bilingual execution across every workstream — warehouse, creators, business matching, market research. Monthly retainer. Scale up or down as your needs evolve.</p>
+  <p class="ph-zh">我们不只给您一份报告就走 — 我们作为您在曼谷的本地运营团队, 留下来执行到底.</p>
+  <a href="contact.html" class="btn btn-gold">Start Your Operations Plan <span style="font-size:17px">&rarr;</span></a>
+</section>
+
+<!-- ② Problems -->
+<section class="sec sec-alt" id="problems">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">Why You Need This</div><h2 class="st">Setting up operations in Thailand<br>is a full-time job. Actually, it's four.</h2><p class="ss">You cannot run Thai operations from a desk in Shenzhen. Here is what breaks when you try.</p></div>
+    <div class="problem-grid">
+      <div class="problem-card rv">
+        <div class="p-num">01</div>
+        <h4>Setting Up Operations in a Foreign Country Is a Full-Time Job</h4>
+        <p>Finding a warehouse, hiring creators, meeting distributors, understanding regulations — these are not side projects. Each workstream requires local presence, Thai language, and domain expertise. Assigning one person on your team to "figure out Thailand" is a recipe for burnout and missed deadlines.</p>
+      </div>
+      <div class="problem-card rv rv1">
+        <div class="p-num">02</div>
+        <h4>Dozens of Interdependent Workstreams</h4>
+        <p>Warehouse setup affects your e-commerce launch timeline. Creator campaigns need product in market. Distributor negotiations depend on market research findings. Every workstream is connected — and managing the interdependencies from abroad, across a language barrier, is nearly impossible.</p>
+      </div>
+      <div class="problem-card rv rv2">
+        <div class="p-num">03</div>
+        <h4>Every Workstream Requires Thai Language</h4>
+        <p>Warehouse contracts are in Thai. Creator agreements are in Thai. Distributor negotiations happen in Thai. Regulatory filings are in Thai. You cannot manage four parallel workstreams through Google Translate and a part-time interpreter. You need a bilingual team embedded in the country.</p>
+      </div>
+      <div class="problem-card rv rv3">
+        <div class="p-num">04</div>
+        <h4>No Single Point of Accountability</h4>
+        <p>You hire a warehouse consultant, a creator agency, a business matchmaker, and a research firm. Four vendors. Four contracts. Four points of contact. Four different incentives. When things go wrong, each vendor blames the others. You are left coordinating between four parties who have no incentive to cooperate — and every incentive to protect their own scope.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ③ Why ThaiBridge -->
+<section class="sec" id="why-thaibridge">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">Why Not DIY / Why Not an Agency / Why ThaiBridge</div><h2 class="st">Three approaches to local operations.<br>Two multiply your problems.</h2><p class="ss">How managing it yourself, hiring multiple agencies, and partnering with ThaiBridge compare across the dimensions that determine operational success.</p></div>
+    <div class="cmp-grid">
+      <div class="cmp-card rv">
+        <h4>Team Structure &amp; Coordination</h4>
+        <div class="cmp-row"><div class="lbl">DIY / Internal Team</div><div class="txt">You assign one or two people to "manage Thailand." They handle everything — or try to. They are not in Thailand. They do not speak Thai. They are also doing their day job. Workstreams stall for weeks because one person cannot be in four places at once. Burnout is inevitable. Turnover resets everything.</div></div>
+        <div class="cmp-row"><div class="lbl">Multiple Agencies</div><div class="txt">You hire a warehouse consultant, a creator agency, a matchmaker, and a researcher — four separate vendors. You become the project manager, coordinating between four parties who do not communicate with each other. When the creator agency needs product samples for a shoot and the warehouse has not received them yet, you are the one making late-night WeChat calls to both.</div></div>
+        <div class="cmp-row"><div class="lbl win">ThaiBridge</div><div class="txt win">One team handles everything. One point of contact for you. Internally, our warehouse, creator, matching, and research teams coordinate daily — in the same office, in the same language. When one workstream affects another, we catch it before it becomes your problem. You get a weekly summary of all workstreams. You attend one review call, not four.</div></div>
+      </div>
+      <div class="cmp-card rv rv1">
+        <h4>Communication &amp; Reporting</h4>
+        <div class="cmp-row"><div class="lbl">DIY / Internal Team</div><div class="txt">Your team communicates with Thai counterparts in English — with varying levels of success. Misunderstandings compound. Status updates are inconsistent. You have no standardized reporting, so you cannot compare progress across workstreams or months.</div></div>
+        <div class="cmp-row"><div class="lbl">Multiple Agencies</div><div class="txt">Each agency has their own reporting format, cadence, and definition of "done." One sends a PDF monthly. Another sends WhatsApp messages sporadically. A third goes silent for three weeks and then delivers a 40-page deck. You spend hours each week just consolidating status updates.</div></div>
+        <div class="cmp-row"><div class="lbl win">ThaiBridge</div><div class="txt win">Weekly Progress Reports — standardized across all workstreams. Monthly Performance Dashboard with KPIs, milestones, burn rate, and risks. Quarterly Strategy Review where we step back and assess overall progress against your Thailand entry roadmap. All reporting is bilingual — in Chinese with English summaries. One format. One cadence. One source of truth.</div></div>
+      </div>
+      <div class="cmp-card rv rv2">
+        <h4>Cost Structure &amp; Flexibility</h4>
+        <div class="cmp-row"><div class="lbl">DIY / Internal Team</div><div class="txt">Hiring even one full-time person in Bangkok costs $2,000-$4,000 per month (salary, benefits, office, visa). Plus you need to manage them. Plus they need to be bilingual and experienced in your category — a rare and expensive combination. And if they leave, you start over.</div></div>
+        <div class="cmp-row"><div class="lbl">Multiple Agencies</div><div class="txt">Each agency has minimum commitments, different billing cycles, and scope limitations. The warehouse consultant charges a project fee but does not do creators. The creator agency charges a campaign retainer but does not do research. Total cost is unpredictable and scope gaps are inevitable.</div></div>
+        <div class="cmp-row"><div class="lbl win">ThaiBridge</div><div class="txt win">Monthly retainer. Clear scope. Scale up or down each quarter. You get a full bilingual operations team for the cost of one or two full-time hires — without the HR overhead, office costs, or retention risk. If you need more support in Month 3 (e.g., a product launch), we flex up. If you need less in Month 8 (e.g., steady-state operations), we flex down. You only pay for what you need.</div></div>
+      </div>
+      <div class="cmp-card rv rv3">
+        <h4>Long-Term Sustainability</h4>
+        <div class="cmp-row"><div class="lbl">DIY / Internal Team</div><div class="txt">If your internal Thailand lead leaves, your institutional knowledge walks out the door. You are back to square one — re-hiring, re-training, re-building relationships. Every departure costs 3-6 months of momentum.</div></div>
+        <div class="cmp-row"><div class="lbl">Multiple Agencies</div><div class="txt">Agencies come and go. Contracts expire. Knowledge is siloed. When you switch agencies (which you will — because one of them will inevitably underperform), the new agency has no context. You pay to re-explain your business every 12 months.</div></div>
+        <div class="cmp-row"><div class="lbl win">ThaiBridge</div><div class="txt win">We are built to be your long-term operating partner. Institutional knowledge lives in our team, not in one person. If a team member transitions, your operations do not skip a beat — because your context is documented in our systems and shared across the team. And if you eventually want to build your own Thailand team, we help you hire and transition — handing over knowledge, relationships, and processes with zero disruption.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ④ How We Work -->
+<section class="sec sec-alt" id="how-we-work">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">How We Work</div><h2 class="st">From zero to operational in Thailand<br>in five phases.</h2><p class="ss">A phased approach that de-risks your entry — building foundations before scaling investment.</p></div>
+    <div class="wf-steps">
+      <div class="wf-step rv">
+        <div class="wf-num">1</div>
+        <div class="wf-body"><h4>Foundation (Month 1)</h4><p>We establish the operational backbone: company registration support (with legal partners), bank account setup, office/co-working space identification, team structure design, and the master project plan with milestones across all workstreams. We conduct the initial market research sprint — store audits, competitor mapping, pricing analysis — to inform all downstream decisions. Output: Master Operations Plan with timeline, budget, and resource allocation. Weekly progress reporting begins.</p></div>
+      </div>
+      <div class="wf-step rv rv1">
+        <div class="wf-num">2</div>
+        <div class="wf-body"><h4>Infrastructure (Month 1-2)</h4><p>We activate the physical and commercial infrastructure: warehouse partner identification and onboarding, product registration and regulatory compliance (FDA, TISI, etc. as applicable), distributor/retail partner sourcing and initial outreach, and creator network strategy and roster building. Every workstream runs in parallel, coordinated by a single project lead. Output: Warehouse operational, regulatory filings submitted, partner shortlists ready for your review.</p></div>
+      </div>
+      <div class="wf-step rv rv2">
+        <div class="wf-num">3</div>
+        <div class="wf-body"><h4>Market Activation (Month 2-3)</h4><p>Your products hit the market: first shipments arrive at the warehouse, e-commerce listings go live (Shopee, Lazada, TikTok Shop), creator campaigns launch with your approved roster, distributor/retail negotiations progress toward agreement, and initial consumer feedback begins flowing in. We manage day-to-day operations across all channels in Thai while you focus on product and strategy. Output: Products live in market. First sales data. First creator content live. Active partner negotiations.</p></div>
+      </div>
+      <div class="wf-step rv rv3">
+        <div class="wf-num">4</div>
+        <div class="wf-body"><h4>Operations &amp; Optimization (Month 3-6)</h4><p>We shift from launch to optimization: warehouse SLA performance monitoring and improvement, creator campaign iteration based on performance data, distributor/retail partnership stewardship, pricing and promotion optimization, inventory forecasting and replenishment, and customer feedback integration into product and marketing decisions. Monthly Performance Dashboard tracks KPIs across all workstreams. Output: Stable operations. Growing sales. Documented processes. Performance data driving decisions.</p></div>
+      </div>
+      <div class="wf-step rv rv4">
+        <div class="wf-num">5</div>
+        <div class="wf-body"><h4>Scaling &amp; Transition (Month 6-12)</h4><p>Strategic phase: expand to additional channels or regions, scale creator roster, deepen distributor relationships, consider local manufacturing or JV opportunities, and — if desired — begin planning your own Thailand team. If you want to build an in-house team, we design the organizational structure, write job descriptions, screen candidates, conduct initial interviews in Thai, and manage a structured knowledge transfer over 2-3 months. If you prefer to continue with us, we operate as your permanent local team — with quarterly strategy reviews and continuous optimization. Output: Your Thailand business runs — with or without us, your choice.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ Deliverables -->
+<section class="sec" id="deliverables">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">Deliverables</div><h2 class="st">What you receive throughout<br>a local execution engagement.</h2><p class="ss">Ongoing deliverables that give you full visibility and control — from 9,000 km away.</p></div>
+    <div class="del-grid">
+      <div class="del-card rv">
+        <div class="del-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h4>Weekly Progress Reports</h4>
+        <p>Standardized status update across all active workstreams — completed, in progress, blocked, next week priorities — with clear owners and deadlines.</p>
+      </div>
+      <div class="del-card rv rv1">
+        <div class="del-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M18 20V10M12 20V4M6 20v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <h4>Monthly Performance Dashboard</h4>
+        <p>KPI tracking across all workstreams — sales, fulfillment SLAs, creator campaign metrics, partnership milestones, burn rate vs. budget — with trend analysis.</p>
+      </div>
+      <div class="del-card rv rv2">
+        <div class="del-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h4>Quarterly Strategy Review</h4>
+        <p>Live presentation and discussion — progress vs. plan, market developments, strategic recommendations, resource reallocation, and next-quarter priorities.</p>
+      </div>
+      <div class="del-card rv rv3">
+        <div class="del-icon"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 8h20" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="8" x2="8" y2="22" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h4>All Service-Specific Deliverables</h4>
+        <p>Every deliverable from our warehouse, creator, matching, and research services — produced on schedule, coordinated across workstreams, delivered in one consistent format.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑥ Best For -->
+<section class="sec sec-alt" id="best-for">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">Best For</div><h2 class="st">Who this service is designed for.</h2><p class="ss">Local execution is for brands that are past the "should we enter?" stage and ready to commit resources to making Thailand work.</p></div>
+    <div class="best-grid">
+      <div class="best-card rv">
+        <div class="b-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h4>Brands That Have Validated Market Opportunity</h4>
+        <p>You have done initial research (or we have done it with you) and there is a clear case for Thailand entry. Now you need execution — not more analysis.</p>
+      </div>
+      <div class="best-card rv rv1">
+        <div class="b-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2l3 6 6.5 1-4.7 4.6 1.1 6.4-5.9-3.1-5.9 3.1 1.1-6.4L2.5 9 9 8l3-6z" stroke="currentColor" stroke-width="1.5"/></svg></div>
+        <h4>Brands Needing 3-12 Months of Operational Support</h4>
+        <p>Brands that want a local team to build and run Thailand operations for a defined period — whether to prove the market before committing to permanent hires, or to accelerate entry while the internal team focuses on the home market.</p>
+      </div>
+      <div class="best-card rv rv2">
+        <div class="b-icon"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="5" r="2" fill="currentColor" opacity=".5"/></svg></div>
+        <h4>Brands That May Eventually Hire Their Own Thailand Team</h4>
+        <p>Brands that eventually want in-country staff but need an experienced partner to build the foundation, establish processes, and manage the transition — ensuring the new hire inherits a functioning operation, not chaos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ FAQ -->
+<section class="sec" id="faq">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">FAQ</div><h2 class="st">Common questions about our<br>local execution service.</h2><p class="ss">Straight answers from our operations team in Bangkok.</p></div>
+    <div class="faq-list">
+      <div class="faq-card rv" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What's the minimum commitment?<span class="faq-arrow">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">We recommend a minimum 3-month engagement. Month 1 is foundation and infrastructure setup. Month 2 is market activation. By Month 3, you have initial performance data and can assess whether to continue, adjust scope, or transition. Shorter engagements are possible for focused scopes (e.g., "get our warehouse operational and run it for 6 weeks"), but for multi-workstream execution, 3 months is the minimum to deliver meaningful results. Most clients stay with us for 6-12 months. There is no long-term lock-in — we earn your business every month.</div></div>
+      </div>
+      <div class="faq-card rv rv1" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What costs are NOT included in the retainer?<span class="faq-arrow">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Our monthly retainer covers our team's time, bilingual coordination, project management, and reporting. Costs that are NOT included: warehouse storage and fulfillment fees (paid directly to the warehouse), creator fees (paid directly to creators — we do not mark up), third-party services (legal, accounting, regulatory filing fees), product samples for creators or distributors, travel expenses for site visits outside Bangkok, and advertising spend. We provide a clear budget forecast at the start of each month so you know exactly what additional costs to expect. There are no hidden fees.</div></div>
+      </div>
+      <div class="faq-card rv rv2" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Who is my day-to-day contact?<span class="faq-arrow">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">You are assigned a dedicated Operations Lead — a bilingual (Chinese/English and Thai) project manager based in Bangkok. This person is your single point of contact for all workstreams, all questions, and all escalations. They run the weekly progress call, prepare your reports, and coordinate our internal team on your behalf. Behind them, our warehouse, creator, matching, and research specialists execute the actual work. You communicate with one person. Our whole team is behind them. If your Operations Lead is ever unavailable (sick, on leave), a backup is briefed and introduced before the handoff.</div></div>
+      </div>
+      <div class="faq-card rv rv3" onclick="this.classList.toggle('open')">
+        <div class="faq-q">Can you help us hire our own Thailand team later?<span class="faq-arrow">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Yes — this is a planned transition path for many clients. When you are ready to build your own team, we design the organizational structure, write job descriptions in Thai, screen candidates, conduct initial interviews, and present you with a shortlist. Once you hire, we manage a structured knowledge transfer over 2-3 months: documented processes, relationship introductions, system access, and parallel operations. We do not see your in-house team as competition — we see it as the natural maturation of a successful Thailand entry. Our goal is to make the transition seamless, not to make you dependent on us forever.</div></div>
+      </div>
+      <div class="faq-card rv rv4" onclick="this.classList.toggle('open')">
+        <div class="faq-q">What if we need to scale down or pause?<span class="faq-arrow">+</span></div>
+        <div class="faq-a"><div class="faq-a-inner">Our retainer model is designed for flexibility. We review scope quarterly (or more frequently if needed). If you need to reduce scope — for example, pausing creator campaigns while maintaining warehouse operations — we adjust the retainer and reallocate team resources accordingly. If you need to pause entirely, we require 30 days' notice and will manage an orderly pause: documenting current state, securing commitments with partners, and preparing a restart plan so you can resume without starting from zero. If your business circumstances change dramatically, we will work with you to find a fair arrangement — we are a partner, not a contract to be enforced.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ CTA -->
+<section class="sec sec-alt">
+  <div class="ctr">
+    <div class="sh rv"><div class="sk">Get Started</div><h2 class="st">Ready to have a local team<br>in Bangkok — starting this month?</h2><p class="ss">Tell us where you are in your Thailand journey and what you need to get done. We'll prepare a tailored operations proposal — at no cost.</p></div>
+    <div class="cta-sec rv">
+      <div class="cta-box">
+        <h3>Book a Free Consultation</h3>
+        <p>Share your brand, your Thailand goals, and your timeline. We'll respond within 24 hours with a preliminary operations plan and retainer framework.</p>
+        <p class="live"><span class="live-d"></span> Based in Bangkok. Available now.</p>
+        <a href="contact.html" class="btn btn-gold">Start Your Operations Plan <span style="font-size:17px">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="ft-i">
+    <div class="ft-t">
+      <div><div class="ft-B"><span class="ft-M">TB</span>ThaiBridge</div><p class="ft-desc">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p></div>
+      <div><div class="ft-h">Pages</div><div class="ft-l"><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+      <div><div class="ft-h">Services</div><div class="ft-l"><a href="warehouse.html">Warehouse</a><a href="creator-network.html">Creator Network</a><a href="business-matching.html">Business Matching</a><a href="market-research.html">Market Research</a></div></div>
+      <div><div class="ft-h">Contact</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a></div></div>
+    </div>
+    <div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.06,rootMargin:'0px 0px -12px 0px'});
+  document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+  const nav=document.getElementById('nav');nav.classList.toggle('sc',window.scrollY>40);
+  window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>40),{passive:true});
+</script>
+</body>
+</html>
