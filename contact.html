@@ -3,230 +3,127 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — ThaiBridge | Your local team in Thailand</title>
+<title>Contact — ThaiBridge</title>
 <meta name="description" content="Get in touch with ThaiBridge. Based in Bangkok, we offer free consultations for brands entering the Thai market.">
-<meta property="og:title" content="Contact — ThaiBridge | Your local team in Thailand">
-<meta property="og:description" content="Start a conversation about your Thailand goals. No commitment, no sales pitch — just honest advice from a team on the ground.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://thaibridge.asia/contact">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Contact — ThaiBridge | Your local team in Thailand">
-<meta name="twitter:description" content="Get in touch with the ThaiBridge team in Bangkok.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Contact — ThaiBridge"><meta property="og:description" content="Start a conversation about your Thailand goals. No commitment, no sales pitch — just honest advice from a team on the ground in Bangkok.">
+<meta property="og:type" content="website"><meta property="og:url" content="https://thaibridge.asia/contact">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Contact — ThaiBridge"><meta name="twitter:description" content="Get in touch with the ThaiBridge team in Bangkok.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-  :root{
-    --bg:#040810;--bg2:#060C1A;--sf:#0A1124;--sf2:#0E162E;
-    --br:rgba(255,255,255,.04);--br2:rgba(255,255,255,.07);
-    --t1:#EEF1F7;--t2:#8E97AE;--t3:#4E5668;
-    --g:#C8A951;--gd:rgba(200,169,81,.06);--gm:rgba(200,169,81,.12);
-    --bl:#3B82F6;
-    --r:12px;--rl:20px;--e:cubic-bezier(.22,.61,.36,1);
-  }
+  :root{--bg:#040810;--bg2:#060C1A;--sf:#0A1124;--sf2:#0D152E;--br:rgba(255,255,255,.045);--br2:rgba(255,255,255,.065);--t1:#EDF1F7;--t2:#8892A6;--t3:#495266;--g:#C8A951;--gd:rgba(200,169,81,.055);--gm:rgba(200,169,81,.10);--bl:#3B82F6;--r:10px;--rl:18px;--e:cubic-bezier(.23,.6,.35,1)}
   html{scroll-behavior:smooth}
   body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--t1);line-height:1.6;-webkit-font-smoothing:antialiased;font-weight:400;overflow-x:hidden}
   a{color:inherit;text-decoration:none}
-
   .amb{position:fixed;inset:0;pointer-events:none;z-index:0}
-  .amb-o{position:absolute;border-radius:50%;filter:blur(200px)}
-  .amb-o.a{width:960px;height:960px;background:radial-gradient(circle,rgba(59,130,246,.05),transparent 70%);top:-440px;right:-300px}
-  .amb-o.b{width:720px;height:720px;background:radial-gradient(circle,rgba(200,169,81,.022),transparent 70%);bottom:-340px;left:-280px}
-  .amb-g{position:absolute;inset:0;opacity:.012;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px);background-size:80px 80px}
-  .amb-n{position:absolute;inset:0;opacity:.015;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
-
-  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;width:min(94%,1080px);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 8px 0 24px;background:rgba(10,18,36,.70);backdrop-filter:blur(28px) saturate(180%);-webkit-backdrop-filter:blur(28px) saturate(180%);border:1px solid var(--br);border-radius:16px;transition:all .4s}
-  .nav.sc{background:rgba(10,18,36,.93);border-color:var(--br2);box-shadow:0 4px 60px rgba(0,0,0,.45)}
-  .nav-b{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px}
-  .nav-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:800;color:#040810}
-  .nav-l{display:flex;align-items:center;gap:4px}
-  .nav-l a{font-size:14px;font-weight:500;color:var(--t2);padding:8px 16px;border-radius:8px;transition:all .2s}
-  .nav-l a:hover,.nav-l a.active{color:var(--t1);background:rgba(255,255,255,.03)}
-  .nav-l a.active{background:rgba(255,255,255,.05)}
-  .nav-cta{margin-left:12px;padding:9px 20px;font-size:14px;font-weight:600;color:#040810!important;background:var(--g);border-radius:10px;transition:all .25s}
-  .nav-cta:hover{background:#D4B85E!important;box-shadow:0 0 32px rgba(200,169,81,.16);transform:translateY(-1px)}
-
-  .sec{position:relative;z-index:1;padding:168px 8%}
+  .a-o{position:absolute;border-radius:50%;filter:blur(220px)}
+  .a-o.a{width:1000px;height:1000px;background:radial-gradient(circle,rgba(59,130,246,.04),transparent 70%);top:-460px;right:-320px}
+  .a-o.b{width:760px;height:760px;background:radial-gradient(circle,rgba(200,169,81,.018),transparent 70%);bottom:-360px;left:-300px}
+  .a-g{position:absolute;inset:0;opacity:.01;background-image:linear-gradient(rgba(255,255,255,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.055) 1px,transparent 1px);background-size:80px 80px}
+  .a-n{position:absolute;inset:0;opacity:.012;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.7' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .nav{position:fixed;top:24px;left:50%;transform:translateX(-50%);z-index:1000;width:min(94%,1080px);height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 6px 0 22px;background:rgba(10,18,36,.72);backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);border:1px solid var(--br);border-radius:14px;transition:all .5s}
+  .nav.sc{background:rgba(10,18,36,.94);border-color:var(--br2);box-shadow:0 4px 64px rgba(0,0,0,.50)}
+  .nav-B{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;letter-spacing:-.3px}
+  .nav-M{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12.5px;font-weight:800;color:#040810}
+  .nav-L{display:flex;align-items:center;gap:2px}
+  .nav-L a{font-size:14px;font-weight:500;color:var(--t2);padding:7px 16px;border-radius:8px;transition:all .2s}
+  .nav-L a:hover,.nav-L a.active{color:var(--t1);background:rgba(255,255,255,.035)}.nav-L a.active{background:rgba(255,255,255,.05)}
+  .nav-L .nav-CTA{margin-left:12px;padding:8px 20px;font-size:14px;font-weight:600;color:#040810!important;background:var(--g);border-radius:9px;transition:all .3s var(--e)}
+  .nav-L .nav-CTA:hover{background:#D4B85E!important;box-shadow:0 0 36px rgba(200,169,81,.15);transform:translateY(-1px)}
+  .sec{position:relative;z-index:1;padding:200px 8%}
   .sec-alt{background:var(--bg2);border-top:1px solid var(--br);border-bottom:1px solid var(--br)}
-  .ctr{max-width:1080px;margin:0 auto}
-  .sec-hd{margin-bottom:112px;text-align:center}
-  .sec-k{font-size:11.5px;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:var(--g);margin-bottom:18px}
-  .sec-t{font-size:clamp(32px,4vw,48px);font-weight:700;letter-spacing:-1px;line-height:1.11;margin-bottom:20px}
-  .sec-s{max-width:520px;margin:0 auto;font-size:16px;color:var(--t2);line-height:1.7}
-  .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s var(--e)}
-  .rv.in{opacity:1;transform:translateY(0)}
-  .rv1{transition-delay:.1s}.rv2{transition-delay:.2s}.rv3{transition-delay:.3s}.rv4{transition-delay:.4s}
-
-  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:10px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .25s var(--e);position:relative;overflow:hidden}
-  .btn-g{background:var(--g);color:#040810;box-shadow:0 2px 12px rgba(200,169,81,.05)}
-  .btn-g:hover{background:#D4B85E;box-shadow:0 4px 24px rgba(200,169,81,.14);transform:translateY(-1px)}
-  .btn-g::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.10) 50%,transparent 60%);transform:translateX(-100%);transition:transform .55s}
-  .btn-g:hover::after{transform:translateX(100%)}
-  .btn-o{background:transparent;border:1px solid rgba(255,255,255,.10);color:var(--t1)}
-  .btn-o:hover{border-color:rgba(255,255,255,.18);background:rgba(255,255,255,.015);transform:translateY(-1px)}
-
-  /* ═══════════ PAGE HERO ═══════════ */
-  .page-hero{position:relative;z-index:1;padding:200px 8% 112px;text-align:center}
-  .page-hero .sec-k{margin-bottom:24px}
-
-  /* ═══════════ CONTACT ═══════════ */
-  .ct-l{display:grid;grid-template-columns:1fr 1fr;gap:56px;max-width:1000px;margin:0 auto}
-  .ct-g{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .ct-c{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);padding:24px 20px;text-align:center;transition:all .3s var(--e)}
-  .ct-c:hover{border-color:rgba(200,169,81,.08);background:var(--sf2);transform:translateY(-2px)}
-  .ct-i{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin:0 auto 12px}
-  .ct-lb{font-size:10px;font-weight:600;letter-spacing:2px;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
-  .ct-vl{font-size:14px;font-weight:500;color:var(--t1);line-height:1.4}
-  .ct-p{background:var(--sf);border:1px solid rgba(200,169,81,.07);border-radius:var(--rl);padding:56px 44px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
-  .ct-p h3{font-size:26px;font-weight:700;letter-spacing:-.5px;margin-bottom:12px}
-  .ct-p .dsc{font-size:15px;color:var(--t2);margin-bottom:8px;line-height:1.6;max-width:280px}
-  .ct-p .live{font-size:12px;color:var(--t3);margin-bottom:40px;display:flex;align-items:center;gap:8px;justify-content:center}
-  .live-d{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.22)}
-  .ct-btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:264px}
-  .ct-btns .btn{width:100%}
-
+  .ctr{max-width:1040px;margin:0 auto}
+  .sh{text-align:center;margin-bottom:120px}
+  .sk{font-size:11px;font-weight:600;letter-spacing:3.5px;text-transform:uppercase;color:var(--g);margin-bottom:20px}
+  .st{font-size:clamp(30px,3.8vw,46px);font-weight:700;letter-spacing:-.8px;line-height:1.12;margin-bottom:20px}
+  .ss{max-width:480px;margin:0 auto;font-size:15.5px;color:var(--t2);line-height:1.75;font-weight:400}
+  .rv{opacity:0;transform:translateY(20px);transition:opacity .55s ease,transform .55s var(--e)}.rv.in{opacity:1;transform:translateY(0)}
+  .rv1{transition-delay:.08s}.rv2{transition-delay:.16s}.rv3{transition-delay:.24s}.rv4{transition-delay:.32s}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;border-radius:9px;font-size:15px;font-weight:600;letter-spacing:-.2px;cursor:pointer;border:none;transition:all .3s var(--e);position:relative;overflow:hidden}
+  .btn-gold{background:var(--g);color:#040810;box-shadow:0 1px 8px rgba(200,169,81,.04)}
+  .btn-gold:hover{background:#D4B85E;box-shadow:0 4px 20px rgba(200,169,81,.12);transform:translateY(-1px)}
+  .btn-gold::after{content:'';position:absolute;inset:0;background:linear-gradient(105deg,transparent 40%,rgba(255,255,255,.08) 50%,transparent 60%);transform:translateX(-100%);transition:transform .5s}
+  .btn-gold:hover::after{transform:translateX(100%)}
+  .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,.09);color:var(--t1)}
+  .btn-ghost:hover{border-color:rgba(255,255,255,.16);background:rgba(255,255,255,.012);transform:translateY(-1px)}
+  .page-hero{position:relative;z-index:1;padding:200px 8% 96px;text-align:center}
+  .ct-l{display:grid;grid-template-columns:1fr 1fr;gap:48px;max-width:960px;margin:0 auto}
+  .ct-g{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-content:start}
+  .ct-c{background:var(--sf);border:1px solid var(--br);border-radius:var(--r);padding:22px 18px;text-align:center;transition:all .3s var(--e)}
+  .ct-c:hover{border-color:rgba(200,169,81,.07);background:var(--sf2);transform:translateY(-1px)}
+  .ct-i2{width:36px;height:36px;border-radius:9px;display:flex;align-items:center;justify-content:center;margin:0 auto 10px}
+  .ct-lb2{font-size:10px;font-weight:600;letter-spacing:2px;color:var(--t3);text-transform:uppercase;margin-bottom:4px}
+  .ct-vl2{font-size:13.5px;font-weight:500;color:var(--t1);line-height:1.4}
+  .ct-p{background:var(--sf);border:1px solid rgba(200,169,81,.06);border-radius:var(--rl);padding:56px 44px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center}
+  .ct-p h3{font-size:25px;font-weight:700;letter-spacing:-.45px;margin-bottom:14px}
+  .ct-p .dsc{font-size:14.5px;color:var(--t2);margin-bottom:10px;line-height:1.6;max-width:280px}
+  .ct-p .live{font-size:12px;color:var(--t3);margin-bottom:44px;display:flex;align-items:center;gap:8px;justify-content:center}
+  .live-d{width:7px;height:7px;border-radius:50%;background:#22C55E;box-shadow:0 0 10px rgba(34,197,94,.18)}
+  .ct-btns{display:flex;flex-direction:column;gap:12px;width:100%;max-width:264px}.ct-btns .btn{width:100%}
+  .visit-block{max-width:600px;margin:0 auto;text-align:center}
+  .visit-block p{font-size:15px;color:var(--t2);line-height:1.75}
   footer{border-top:1px solid var(--br);padding:80px 8% 40px;position:relative;z-index:1}
-  .ft-i{max-width:1080px;margin:0 auto}
-  .ft-t{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:64px;margin-bottom:56px}
-  .ft-b{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
-  .ft-m{width:28px;height:28px;border-radius:8px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#040810}
-  .ft-d{font-size:13.5px;color:var(--t3);line-height:1.65;max-width:250px}
-  .ft-h{font-size:12px;font-weight:600;letter-spacing:1.5px;color:var(--t2);margin-bottom:20px;text-transform:uppercase}
-  .ft-l{display:flex;flex-direction:column;gap:8px}
-  .ft-l a{font-size:13.5px;color:var(--t3);transition:color .2s}
-  .ft-l a:hover{color:var(--t1)}
-  .ft-x{padding-top:32px;border-top:1px solid var(--br);display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--t3)}
-
+  .ft-i{max-width:1040px;margin:0 auto}
+  .ft-t{display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;gap:72px;margin-bottom:56px}
+  .ft-B{display:flex;align-items:center;gap:10px;font-size:16px;font-weight:700;margin-bottom:12px;letter-spacing:-.3px}
+  .ft-M{width:28px;height:28px;border-radius:7px;background:linear-gradient(135deg,#C8A951,#A08030);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:800;color:#040810}
+  .ft-desc{font-size:13px;color:var(--t3);line-height:1.7;max-width:240px}
+  .ft-h{font-size:11px;font-weight:600;letter-spacing:1.8px;color:var(--t2);margin-bottom:22px;text-transform:uppercase}
+  .ft-l{display:flex;flex-direction:column;gap:8px}.ft-l a{font-size:13.5px;color:var(--t3);transition:color .2s}.ft-l a:hover{color:var(--t1)}
+  .ft-x{padding-top:32px;border-top:1px solid var(--br);display:flex;justify-content:space-between;align-items:center;font-size:12.5px;color:var(--t3)}
   @media(max-width:860px){
     .nav{top:8px;left:3%;transform:none;width:94%;padding:0 4px 0 14px;border-radius:12px;height:48px}
-    .nav-l a{font-size:12px;padding:6px 7px}.nav-cta{padding:7px 13px;font-size:12px!important}
+    .nav-L a{font-size:12px;padding:5px 7px}.nav-L .nav-CTA{padding:7px 13px;font-size:12px!important}
     .ct-l{grid-template-columns:1fr}.ct-g{grid-template-columns:1fr 1fr}
     .ft-t{grid-template-columns:1fr 1fr;gap:40px}.ft-x{flex-direction:column;gap:12px;text-align:center}
-    .sec,.page-hero{padding:128px 6%}
+    .sec{padding:140px 6%}
   }
-  @media(max-width:500px){
-    .ct-g{grid-template-columns:1fr}.ft-t{grid-template-columns:1fr}
-  }
+  @media(max-width:500px){.ct-g{grid-template-columns:1fr}.ft-t{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
-
-<div class="amb"><span class="amb-o a"></span><span class="amb-o b"></span><span class="amb-g"></span><span class="amb-n"></span></div>
-
+<div class="amb"><span class="a-o a"></span><span class="a-o b"></span><span class="a-g"></span><span class="a-n"></span></div>
 <nav class="nav" id="nav">
-  <a href="index.html" class="nav-b"><span class="nav-m">TB</span>ThaiBridge</a>
-  <div class="nav-l">
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="process.html">Process</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="nav-cta">Book a Call</a>
+  <a href="index.html" class="nav-B"><span class="nav-M">TB</span>ThaiBridge</a>
+  <div class="nav-L">
+    <a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a>
+    <a href="contact.html" class="nav-CTA">Book a Call</a>
   </div>
 </nav>
 
-<section class="page-hero">
-  <div class="ctr">
-    <div class="rv">
-      <div class="sec-k">Contact</div>
-      <h2 class="sec-t">Let's talk about Thailand.</h2>
-      <p class="sec-s">No commitment. No sales pitch. Just a real conversation about your brand, your goals, and whether we can help you succeed in the Thai market.</p>
-    </div>
+<section class="page-hero"><div class="ctr"><div class="rv"><div class="sk">Contact</div><h1 class="st" style="font-size:clamp(36px,4.5vw,56px)">Let's talk about<br>Thailand.</h1><p class="ss">No commitment. No sales pitch. Just a real conversation about your goals — and whether we can help you achieve them.</p></div></div></section>
+
+<section class="sec sec-alt"><div class="ctr"><div class="ct-l">
+  <div class="rv"><div class="ct-g">
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Email</div><div class="ct-vl2">contact@thaibridge.asia</div></div>
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">WeChat</div><div class="ct-vl2">Available for partners</div></div>
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">LINE</div><div class="ct-vl2">Available for partners</div></div>
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="ct-lb2">Hours</div><div class="ct-vl2">Mon–Fri, 9:00–18:00 ICT</div></div>
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(245,158,11,.055);color:#F59E0B"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Website</div><div class="ct-vl2">thaibridge.asia</div></div>
+    <div class="ct-c"><div class="ct-i2" style="background:rgba(34,197,94,.06);color:#22C55E"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Location</div><div class="ct-vl2">Bangkok, Thailand</div></div>
+  </div></div>
+  <div class="ct-p rv rv1">
+    <h3>Book a Free Consultation</h3>
+    <p class="dsc">Tell us about your brand and what you want to achieve. We'll prepare a tailored assessment — at no cost — within 24 hours.</p>
+    <p class="live"><span class="live-d"></span> Based in Bangkok. Available now.</p>
+    <div class="ct-btns"><a href="mailto:contact@thaibridge.asia" class="btn btn-gold">Start the Conversation <span>&rarr;</span></a><a href="mailto:contact@thaibridge.asia" class="btn btn-ghost">Send an Email</a></div>
   </div>
-</section>
+</div></div></section>
 
-<section class="sec">
-  <div class="ctr">
-    <div class="ct-l">
-      <div class="rv">
-        <div class="ct-g">
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(200,169,81,.06);color:#C8A951">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ct-lb">Email</div>
-            <div class="ct-vl">contact@thaibridge.asia</div>
-          </div>
-
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(59,130,246,.06);color:#3B82F6">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ct-lb">Phone / WeChat</div>
-            <div class="ct-vl">Available for partners</div>
-          </div>
-
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(139,92,246,.06);color:#A78BFA">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2v10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div class="ct-lb">LINE</div>
-            <div class="ct-vl">Available for partners</div>
-          </div>
-
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(6,182,212,.06);color:#22D3EE">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ct-lb">Location</div>
-            <div class="ct-vl">Bangkok, Thailand</div>
-          </div>
-
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(245,158,11,.06);color:#F59E0B">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-            </div>
-            <div class="ct-lb">Business Hours</div>
-            <div class="ct-vl">Mon–Fri, 9:00–18:00 ICT</div>
-          </div>
-
-          <div class="ct-c">
-            <div class="ct-i" style="background:rgba(34,197,94,.06);color:#22C55E">
-              <svg width="17" height="17" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg>
-            </div>
-            <div class="ct-lb">Website</div>
-            <div class="ct-vl">thaibridge.asia</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ct-p rv rv1">
-        <h3>Book a Free Consultation</h3>
-        <p class="dsc">Tell us about your brand and what you want to achieve in Thailand. We'll prepare a tailored assessment — at no cost — within 24 hours.</p>
-        <p class="live"><span class="live-d"></span> Based in Bangkok. Available now.</p>
-        <div class="ct-btns">
-          <a href="mailto:contact@thaibridge.asia" class="btn btn-g">Send Us an Email <span>&rarr;</span></a>
-          <a href="mailto:contact@thaibridge.asia" class="btn btn-o">contact@thaibridge.asia</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="sec sec-alt">
-  <div class="ctr">
-    <div class="sec-hd rv">
-      <div class="sec-k">Visit Us</div>
-      <h2 class="sec-t">Based in Bangkok, Thailand.</h2>
-      <p class="sec-s">We work from the heart of Bangkok, with boots on the ground across the country. Meetings are by appointment only — reach out and we'll find a time that works for you, whether in person or over a video call.</p>
-    </div>
-  </div>
-</section>
+<section class="sec"><div class="ctr"><div class="visit-block rv"><div class="sk">Visit Us</div><div class="st">Based in Bangkok,<br>Thailand.</div><p style="margin-top:20px">We operate from Bangkok, serving clients across Thailand. Meetings by appointment — we'll come to your office, your warehouse, or meet you at a location that works. <span style="color:var(--g);font-weight:500">We believe the best partnerships start face-to-face.</span></p></div></div></section>
 
 <footer>
-  <div class="ft-i">
-    <div class="ft-t">
-      <div><div class="ft-b"><span class="ft-m">TB</span>ThaiBridge</div><p class="ft-d">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p></div>
-      <div><div class="ft-h">Pages</div><div class="ft-l"><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
-      <div><div class="ft-h">Services</div><div class="ft-l"><a href="services.html">Warehouse</a><a href="services.html">Creator Network</a><a href="services.html">Business Matching</a><a href="services.html">Market Research</a></div></div>
-      <div><div class="ft-h">Contact</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a></div></div>
-    </div>
-    <div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div>
-  </div>
+  <div class="ft-i"><div class="ft-t">
+    <div><div class="ft-B"><span class="ft-M">TB</span>ThaiBridge</div><p class="ft-desc">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p></div>
+    <div><div class="ft-h">Pages</div><div class="ft-l"><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
+    <div><div class="ft-h">Services</div><div class="ft-l"><a href="services.html">Warehouse</a><a href="services.html">Creator Network</a><a href="services.html">Business Matching</a><a href="services.html">Market Research</a></div></div>
+    <div><div class="ft-h">Contact</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a></div></div>
+  </div><div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div></div>
 </footer>
 
 <script>
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.06,rootMargin:'0px 0px -16px 0px'});
+  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.06,rootMargin:'0px 0px -12px 0px'});
   document.querySelectorAll('.rv').forEach(el=>io.observe(el));
   const nav=document.getElementById('nav');nav.classList.toggle('sc',window.scrollY>40);
   window.addEventListener('scroll',()=>nav.classList.toggle('sc',window.scrollY>40),{passive:true});
