@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ThaiBridge — Your local team in Thailand. No middlemen. No guesswork.</title>
+<title>ThaiBridge — 您的泰国本地团队 | Your Local Team in Thailand</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='5' y='10' width='8' height='33' rx='2.5' fill='%23EDF1F7'/%3E%3Crect x='22' y='10' width='8' height='33' rx='2.5' fill='%23EDF1F7'/%3E%3Cpath d='M9 13 Q17.5 -2 26 13' fill='none' stroke='%23C8A951' stroke-width='5.5' stroke-linecap='round'/%3E%3C/svg%3E">
-<meta name="description" content="ThaiBridge is your embedded local operating partner in Thailand. Verified resources, real execution, long-term partnership.">
-<meta property="og:title" content="ThaiBridge — Your local team in Thailand">
-<meta property="og:description" content="Enter the Thai market with confidence. Warehousing, creator partnerships, and local operations — handled by people on the ground in Bangkok.">
+<meta name="description" content="ThaiBridge 是您在泰国的本地运营团队——已验证的真实资源，本地执行，长期合作。Your embedded local operating partner in Thailand. Verified resources, real execution, long-term partnership.">
+<meta property="og:title" content="ThaiBridge — 您的泰国本地团队 | Your Local Team in Thailand">
+<meta property="og:description" content="零中介，零猜测。曼谷本地团队帮助中国品牌进入并运营泰国市场。Enter the Thai market with confidence.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://thaibridge.asia">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="ThaiBridge — Your local team in Thailand">
-<meta name="twitter:description" content="Enter the Thai market with confidence. Verified resources, real execution.">
+<meta name="twitter:title" content="ThaiBridge — 您的泰国本地团队 | Your Local Team in Thailand">
+<meta name="twitter:description" content="零中介，零猜测。曼谷本地团队帮助中国品牌进入泰国市场。Enter the Thai market with confidence. Verified resources, real execution.">
 <link rel="canonical" href="https://thaibridge.asia/">
 <script type="application/ld+json">
 {
@@ -116,6 +116,37 @@
   .ts-num{font-size:36px;font-weight:700;letter-spacing:-.8px;background:linear-gradient(135deg,#C8A951,#E2CC7A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:6px}
   .ts-label{font-size:12.5px;font-weight:500;color:var(--t2)}
 
+  /* ═══════ TRUST CARDS ═══════ */
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:960px;margin:0 auto}
+  .trust-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:36px 28px;text-align:center;transition:all .35s var(--e);position:relative;overflow:hidden}
+  .trust-card::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .45s;background:radial-gradient(400px circle at var(--mx,50%) var(--my,50%),rgba(200,169,81,.012),transparent 55%);pointer-events:none;z-index:0}
+  .trust-card:hover::before{opacity:1}
+  .trust-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.10);box-shadow:0 8px 32px rgba(0,0,0,.22)}
+  .trust-card>*{position:relative;z-index:1}
+  .trust-icon{width:44px;height:44px;border-radius:11px;display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+  .trust-card h4{font-size:16px;font-weight:600;margin-bottom:6px;letter-spacing:-.2px}
+  .trust-card p{font-size:13px;color:var(--t2);line-height:1.55}
+
+  /* ═══════ FOUNDER ═══════ */
+  .founder-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;max-width:920px;margin:0 auto}
+  .founder-photo{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);aspect-ratio:1;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .founder-photo-content{text-align:center;z-index:1}
+  .founder-photo-icon{width:64px;height:64px;border-radius:50%;background:rgba(200,169,81,.08);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;color:var(--g)}
+  .founder-photo-label{font-size:12px;color:var(--t3);letter-spacing:2px;font-weight:600}
+  .founder-name{font-size:24px;font-weight:700;letter-spacing:-.4px;margin-bottom:6px}
+  .founder-role{font-size:14px;color:var(--g);font-weight:600;margin-bottom:24px;letter-spacing:.5px}
+  .founder-bio-cn{font-size:16px;color:var(--t1);line-height:1.85;margin-bottom:14px;font-weight:500}
+  .founder-bio-en{font-size:14.5px;color:var(--t2);line-height:1.75}
+  .founder-tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+  .founder-tag{font-size:12px;font-weight:600;color:var(--g);padding:8px 16px;border-radius:20px;border:1px solid rgba(200,169,81,.15);background:rgba(200,169,81,.04)}
+
+  /* ═══════ METRIC CARDS ═══════ */
+  .metric-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .metric-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:44px 28px;text-align:center;transition:all .35s var(--e);position:relative;overflow:hidden}
+  .metric-card:hover{transform:translateY(-2px);border-color:rgba(200,169,81,.08);box-shadow:0 12px 40px rgba(0,0,0,.25)}
+  .metric-num{font-size:clamp(28px,3.5vw,42px);font-weight:700;letter-spacing:-.8px;background:linear-gradient(135deg,#C8A951,#E2CC7A);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:8px;line-height:1.1}
+  .metric-label{font-size:13.5px;color:var(--t2);line-height:1.55;font-weight:400}
+
   /* ═══════ SERVICES ═══════ */
   .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .svc-card{background:var(--sf);border:1px solid var(--br);border-radius:var(--rl);padding:48px 40px;transition:all .35s var(--e);position:relative;overflow:hidden;display:flex;flex-direction:column}
@@ -191,16 +222,22 @@
   .page-hero{position:relative;z-index:1;padding:200px 8% 112px;text-align:center}
 
   @media(max-width:860px){
+    /* Ambient — reduce GPU memory pressure on mobile Safari */
+    .a-o.a{width:400px;height:400px;filter:blur(60px);top:-160px;right:-120px}
+    .a-o.b{width:320px;height:320px;filter:blur(60px);bottom:-120px;left:-120px}
+    .a-g,.a-n{display:none}
+    /* Promote sections to their own compositing layer so they paint above the ambient */
+    .sec,.sec-alt,footer{transform:translateZ(0);-webkit-transform:translateZ(0)}
     .nav{top:8px;left:3%;transform:none;width:94%;padding:0 4px 0 14px;border-radius:12px;height:48px}
     .nav-L a{font-size:12px;padding:5px 7px}.nav-L .nav-CTA{padding:7px 13px;font-size:12px!important}
     .hero-inner{grid-template-columns:1fr;gap:64px}.hero-viz{order:-1}.hv-wrap{max-width:280px;margin:0 auto}
-    .ts-inner{grid-template-columns:repeat(3,1fr)}.svc-grid,.why-grid,.value-grid{grid-template-columns:1fr}
+    .ts-inner{grid-template-columns:repeat(3,1fr)}.trust-grid{grid-template-columns:1fr 1fr}.founder-grid{grid-template-columns:1fr;gap:48px}.founder-photo{max-width:320px;margin:0 auto;aspect-ratio:1}.metric-grid{grid-template-columns:1fr 1fr}.svc-grid,.why-grid,.value-grid{grid-template-columns:1fr}
     .ct-l{grid-template-columns:1fr}.ct-g{grid-template-columns:1fr 1fr}
     .ft-t{grid-template-columns:1fr 1fr;gap:40px}.ft-x{flex-direction:column;gap:12px;text-align:center}
     .sec{padding:140px 6%}.hero{padding:160px 6% 140px}
   }
   @media(max-width:500px){
-    .hero h1{font-size:42px}.ts-inner{grid-template-columns:repeat(2,1fr)}
+    .hero h1{font-size:42px}.ts-inner{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:1fr}.founder-grid{gap:36px}.founder-name{font-size:21px}.metric-grid{grid-template-columns:1fr}
     .ct-g{grid-template-columns:1fr}.ft-t{grid-template-columns:1fr}.hv-wrap{max-width:220px}
   }
 </style>
@@ -212,25 +249,25 @@
 <nav class="nav" id="nav">
   <a href="index.html" class="nav-B"><span class="nav-M">TB</span>ThaiBridge</a>
   <div class="nav-L">
-    <a href="index.html" class="active">Home</a>
-    <a href="services.html">Services</a>
-    <a href="process.html">Process</a>
-    <a href="about.html">About</a>
-    <a href="contact.html" class="nav-CTA">Book a Call</a>
+    <a href="index.html" class="active">Home · 首页</a>
+    <a href="services.html">Services · 服务</a>
+    <a href="process.html">Process · 流程</a>
+    <a href="about.html">About · 关于</a>
+    <a href="contact.html" class="nav-CTA">Book a Call · 预约沟通</a>
   </div>
 </nav>
 
 <section class="hero">
   <div class="hero-inner">
     <div class="rv">
-      <div class="hero-badge">Bangkok &middot; Thailand</div>
-      <h1>Your local team<br>in Thailand.</h1>
-      <p class="hero-desc">No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok, helping Chinese brands enter and operate in the Thai market.</p>
-      <p style="font-size:16px;color:var(--g);margin-bottom:40px;font-weight:500;letter-spacing:-.2px">您的泰国本地团队 — 零中介, 零猜测.</p>
+      <div class="hero-badge">Bangkok · 曼谷 &middot; Thailand · 泰国</div>
+      <h1>Your local team in Thailand.<br><em>您的泰国本地团队。</em></h1>
+      <p class="hero-desc">No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok, helping Chinese brands enter and operate in the Thai market.<br><br>零中介，零猜测。只有真实执行——由曼谷本地团队帮助中国品牌进入并运营泰国市场。</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn btn-gold">Start Your Market Entry Plan <span style="font-size:17px">&rarr;</span></a>
-        <a href="services.html" class="btn btn-ghost">Explore Services</a>
+        <a href="contact.html" class="btn btn-gold">Start Your Market Entry Plan · 开始您的市场进入计划 <span style="font-size:17px">&rarr;</span></a>
+        <a href="services.html" class="btn btn-ghost">Explore Services · 了解服务</a>
       </div>
+      <p style="margin-top:24px;font-size:13px;color:var(--t3);line-height:1.7;max-width:420px">&#10003; Free consultation · 免费咨询 &nbsp; &#10003; Tailored assessment in 24h · 24小时内评估 &nbsp; &#10003; No commitment · 无需签约</p>
     </div>
     <div class="hero-viz rv rv2">
       <div class="hv-wrap">
@@ -256,52 +293,152 @@
           <circle cx="240" cy="220" r="7" fill="none" stroke="rgba(59,130,246,.03)" stroke-width="1"/><circle cx="240" cy="220" r="2.8" fill="#3B82F6" opacity=".4"/>
           <circle cx="250" cy="238" r="13" fill="none" stroke="rgba(96,165,250,.05)" stroke-width="1"/>
           <circle cx="250" cy="238" r="5.5" fill="#60A5FA" class="np-th"/><circle cx="250" cy="238" r="2.5" fill="#93C5FD" opacity=".55"/>
-          <text x="196" y="94" text-anchor="middle" fill="rgba(200,169,81,.32)" font-size="9.5" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">CN</text>
-          <text x="250" y="270" text-anchor="middle" fill="rgba(96,165,250,.32)" font-size="9.5" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">TH</text>
-          <text x="240" y="210" text-anchor="middle" fill="rgba(255,255,255,.12)" font-size="7.5" font-family="Inter,sans-serif" letter-spacing=".5" font-weight="500">TB</text>
+          <text x="196" y="94" text-anchor="middle" fill="rgba(200,169,81,.55)" font-size="11" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">CN</text>
+          <text x="196" y="106" text-anchor="middle" fill="rgba(200,169,81,.18)" font-size="6" font-family="Inter,sans-serif" letter-spacing="1" font-weight="500">CHINA</text>
+          <text x="250" y="270" text-anchor="middle" fill="rgba(96,165,250,.55)" font-size="11" font-family="Inter,sans-serif" letter-spacing="1.5" font-weight="600">TH</text>
+          <text x="250" y="282" text-anchor="middle" fill="rgba(96,165,250,.18)" font-size="6" font-family="Inter,sans-serif" letter-spacing="1" font-weight="500">THAILAND</text>
+          <text x="240" y="210" text-anchor="middle" fill="rgba(255,255,255,.40)" font-size="10" font-family="Inter,sans-serif" letter-spacing=".5" font-weight="600">TB</text>
+          <text x="240" y="222" text-anchor="middle" fill="rgba(255,255,255,.14)" font-size="6" font-family="Inter,sans-serif" letter-spacing="1" font-weight="500">BRIDGE</text>
         </svg>
+      </div>
+      <p style="text-align:center;margin-top:32px;font-size:13.5px;color:var(--t2);line-height:1.8;letter-spacing:-.1px">
+        <span style="color:rgba(200,169,81,.65);font-weight:600">中国品牌</span> &rarr;
+        <span style="color:rgba(255,255,255,.55);font-weight:600">ThaiBridge 连接</span> &rarr;
+        <span style="color:rgba(96,165,250,.65);font-weight:600">泰国本地执行</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ TRUST METRICS ═══════ -->
+<section class="sec" style="padding:96px 8% 88px">
+  <div class="ctr">
+    <div class="sh rv">
+      <div class="sk">Trusted by Chinese Brands · 中国品牌信赖</div>
+      <h2 class="st">Why brands trust us with<br>their Thailand operations.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">为什么品牌方信赖我们将泰国运营交给我们。</span></h2>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card rv">
+        <div class="trust-icon" style="background:rgba(200,169,81,.055);color:#C8A951">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 17l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h4>Bangkok Based · 曼谷本地</h4>
+        <p>Real office. Real people. On the ground in Thailand — not a virtual address.<br>真实的办公室，真实的人。在泰国现场——不是虚拟地址。</p>
+      </div>
+      <div class="trust-card rv rv1">
+        <div class="trust-icon" style="background:rgba(59,130,246,.055);color:#3B82F6">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </div>
+        <h4>CN &amp; TH Team · 中泰双语团队</h4>
+        <p>Bilingual, bicultural. We speak your language — and theirs.<br>双语双文化。说您的话，也说他们的话。</p>
+      </div>
+      <div class="trust-card rv rv2">
+        <div class="trust-icon" style="background:rgba(139,92,246,.055);color:#A78BFA">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h4>Verified Network · 已验真网络</h4>
+        <p>Every partner personally visited and vetted. No directories. No blind matches.<br>每个合作伙伴都经过实地考察。不用黄页，不盲推。</p>
+      </div>
+      <div class="trust-card rv rv3">
+        <div class="trust-icon" style="background:rgba(6,182,212,.055);color:#22D3EE">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="12" r="1.5" fill="currentColor" opacity=".6"/><circle cx="15" cy="12" r="1.5" fill="currentColor" opacity=".6"/><path d="M9 16l2-2 2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h4>AI Powered · AI 驱动</h4>
+        <p>AI embedded into research and workflows — faster intelligence, better decisions.<br>AI 深度嵌入研究与工作流——更快的情报，更准的决策。</p>
       </div>
     </div>
   </div>
 </section>
 
-<div class="trust-strip">
-  <div class="ts-inner">
-    <div class="ts-item rv"><div class="ts-num">Bangkok</div><div class="ts-label">Based in Thailand</div></div>
-    <div class="ts-item rv rv1"><div class="ts-num">Bilingual</div><div class="ts-label">CN &amp; TH Team</div></div>
-    <div class="ts-item rv rv2"><div class="ts-num">Verified</div><div class="ts-label">Local Network</div></div>
-    <div class="ts-item rv rv3"><div class="ts-num">AI</div><div class="ts-label">Powered Workflow</div></div>
-    <div class="ts-item rv rv4"><div class="ts-num">Zero</div><div class="ts-label">Middlemen</div></div>
+<!-- ═══════ TRUST PROOF ═══════ -->
+<section class="sec" id="proof" style="padding:96px 8% 80px">
+  <div class="ctr">
+    <div class="sh rv">
+      <div class="sk">Real Results · 真实成果</div>
+      <h2 class="st">One partner. 8 weeks.<br>Operational in Thailand.</h2>
+      <p class="ss">Every claim on this page has been tested with a real brand. Here's what happened.<br><span style="font-size:14px">本页每一项承诺都已在真实品牌合作中验证。</span> <a href="case-study-01.html" style="color:var(--g);font-weight:500;border-bottom:1px solid rgba(200,169,81,.25);transition:border-color .2s;white-space:nowrap">Read full case →</a></p>
+    </div>
+    <div class="metric-grid">
+      <div class="metric-card rv">
+        <div class="metric-num">8 weeks</div>
+        <div class="metric-label">from first call to live in Thailand<br>从首次沟通到正式运营</div>
+      </div>
+      <div class="metric-card rv rv1">
+        <div class="metric-num">450K+</div>
+        <div class="metric-label">combined views across 12 Thai creators<br>12位泰国达人，总播放量</div>
+      </div>
+      <div class="metric-card rv rv2">
+        <div class="metric-num">4.1%</div>
+        <div class="metric-label">avg engagement rate (1.5% benchmark)<br>平均互动率（行业基准 1.5%）</div>
+      </div>
+      <div class="metric-card rv rv3">
+        <div class="metric-num">50+</div>
+        <div class="metric-label">retail doors in Bangkok via distribution partner<br>曼谷零售门店覆盖，通过分销合作</div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
 
 <section class="sec sec-alt" id="services">
   <div class="ctr">
-    <div class="sh rv"><div class="sk">Core Services</div><h2 class="st">Everything you need to operate<br>in Thailand — under one partner.</h2><p class="ss">Five capabilities. One team. No middlemen.</p></div>
+    <div class="sh rv"><div class="sk">Core Services · 核心服务</div><h2 class="st">Everything you need to operate in Thailand — under one partner.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">在泰国运营所需的一切——一个合作伙伴就够了。</span></h2><p class="ss">Five capabilities. One team. No middlemen.<br>五大能力，一个团队，零中介。</p></div>
     <div class="svc-grid">
       <div class="svc-card rv">
         <div class="svc-icon" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M2 8h20" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="8" x2="8" y2="22" stroke="currentColor" stroke-width="1.5"/><circle cx="14" cy="15" r="2.5" stroke="currentColor" stroke-width="1.5"/></svg></div>
-        <h3>Warehouse</h3><p class="svc-hint">Personally-vetted storage &amp; fulfillment partners across Thailand.</p>
-        <div class="svc-list"><span>Warehouse matching &amp; site visits</span><span>Daily fulfillment operations</span><span>One-piece drop-ship &amp; last-mile</span></div>
-        <a href="services.html" class="svc-link">Learn more <span>&rarr;</span></a>
+        <h3>Warehouse · 仓储</h3><p class="svc-hint">Personally-vetted storage &amp; fulfillment partners across Thailand.<br>经过实地考察的泰国仓储与配送合作伙伴。</p>
+        <div class="svc-list"><span>Warehouse matching &amp; site visits · 仓储匹配与实地考察</span><span>Daily fulfillment operations · 日常配送运营</span><span>One-piece drop-ship &amp; last-mile · 一件代发与最后一公里</span></div>
+        <a href="services.html" class="svc-link">Learn more · 了解更多 <span>&rarr;</span></a>
       </div>
       <div class="svc-card rv rv1">
         <div class="svc-icon" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.5"/><circle cx="18" cy="5" r="2" fill="currentColor" opacity=".5"/></svg></div>
-        <h3>Creator Network</h3><p class="svc-hint">Vetted Thai KOLs &amp; UGC creators with real audience data.</p>
-        <div class="svc-list"><span>UGC matching by performance data</span><span>KOL &amp; TikTok campaigns</span><span>Content production &amp; live commerce</span></div>
-        <a href="services.html" class="svc-link">Learn more <span>&rarr;</span></a>
+        <h3>Creator Network · 达人网络</h3><p class="svc-hint">Vetted Thai KOLs &amp; UGC creators with real audience data.<br>经过验证的泰国 KOL 与 UGC 创作者，真实受众数据。</p>
+        <div class="svc-list"><span>UGC matching by performance data · 基于表现数据的UGC匹配</span><span>KOL &amp; TikTok campaigns · KOL与TikTok推广</span><span>Content production &amp; live commerce · 内容制作与直播电商</span></div>
+        <a href="services.html" class="svc-link">Learn more · 了解更多 <span>&rarr;</span></a>
       </div>
       <div class="svc-card rv rv2">
         <div class="svc-icon" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="9" x2="16" y2="9" stroke="currentColor" stroke-width="1.5"/><line x1="8" y1="13" x2="14" y2="13" stroke="currentColor" stroke-width="1.5"/><circle cx="17" cy="17" r="2" stroke="currentColor" stroke-width="1.5"/></svg></div>
-        <h3>Business Matching</h3><p class="svc-hint">Verified introductions to local partners — with us in the room.</p>
-        <div class="svc-list"><span>Partner vetting &amp; reference checks</span><span>Bilingual negotiation support</span><span>Relationship management ongoing</span></div>
-        <a href="services.html" class="svc-link">Learn more <span>&rarr;</span></a>
+        <h3>Business Matching · 商业对接</h3><p class="svc-hint">Verified introductions to local partners — with us in the room.<br>已验证的本地合作伙伴引荐——我们全程在场。</p>
+        <div class="svc-list"><span>Partner vetting &amp; reference checks · 合作方背景审查</span><span>Bilingual negotiation support · 双语谈判支持</span><span>Relationship management ongoing · 持续关系管理</span></div>
+        <a href="services.html" class="svc-link">Learn more · 了解更多 <span>&rarr;</span></a>
       </div>
       <div class="svc-card rv rv3">
         <div class="svc-icon" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" stroke="currentColor" stroke-width="1.5"/></svg></div>
-        <h3>Market Research</h3><p class="svc-hint">Category-specific intelligence grounded in local consumer reality.</p>
-        <div class="svc-list"><span>Competitive landscape analysis</span><span>Pricing &amp; positioning study</span><span>Regulatory &amp; compliance overview</span></div>
-        <a href="services.html" class="svc-link">Learn more <span>&rarr;</span></a>
+        <h3>Market Research · 市场研究</h3><p class="svc-hint">Category-specific intelligence grounded in local consumer reality.<br>基于泰国本地消费者真实情况的品类情报。</p>
+        <div class="svc-list"><span>Competitive landscape analysis · 竞争格局分析</span><span>Pricing &amp; positioning study · 定价与定位研究</span><span>Regulatory &amp; compliance overview · 法规与合规概览</span></div>
+        <a href="services.html" class="svc-link">Learn more · 了解更多 <span>&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════ FOUNDER ═══════ -->
+<section class="sec sec-alt" id="founder">
+  <div class="ctr">
+    <div class="sh rv">
+      <div class="sk">Meet the Founder · 创始人</div>
+      <h2 class="st">The person behind every decision.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">每一个决策背后的人。</span></h2>
+      <p class="ss">One founder. On the ground in Bangkok. Personally accountable for every partnership.<br>一位创始人。常驻曼谷。对每一个合作项目亲自负责。</p>
+    </div>
+    <div class="founder-grid">
+      <div class="founder-photo rv">
+        <div class="founder-photo-content">
+          <div class="founder-photo-icon">
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M4 20c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <div class="founder-photo-label">FOUNDER PHOTO · 创始人照片</div>
+        </div>
+      </div>
+      <div class="rv rv1">
+        <div class="founder-name">Xiongxiong Huan</div>
+        <div class="founder-role">Founder &amp; CEO, ThaiBridge · 创始人兼CEO</div>
+        <p class="founder-bio-cn">常驻曼谷。亲自确认每一个合作伙伴，亲自参与每一次关键决策。不是远程管理——我在本地，我为每一个合作项目负责。</p>
+        <p class="founder-bio-en">Based in Bangkok full-time. I personally vet every partner and stay involved in every key decision. This isn't remote management — I'm here, on the ground, accountable for every result we deliver.</p>
+        <div class="founder-tags">
+          <span class="founder-tag">Bangkok-Based</span>
+          <span class="founder-tag">Bilingual CN/TH</span>
+          <span class="founder-tag">Long-Term Focus</span>
+          <span class="founder-tag">Personally Accountable</span>
+        </div>
       </div>
     </div>
   </div>
@@ -309,45 +446,45 @@
 
 <section class="sec" id="why">
   <div class="ctr">
-    <div class="sh rv"><div class="sk">Why ThaiBridge</div><h2 class="st">Not the biggest. Not the cheapest.<br>Just the partner that cares most.</h2><p class="ss">Four principles that define every relationship we build.</p></div>
+    <div class="sh rv"><div class="sk">Why ThaiBridge · 为什么选择我们</div><h2 class="st">Not the biggest. Not the cheapest. Just the partner that cares most.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">不是最大的，不是最便宜的。只是最在乎你的那一个。</span></h2><p class="ss">Four principles that define every relationship we build.<br>定义每一次合作的四项原则。</p></div>
     <div class="why-grid">
-      <div class="why-card rv"><div class="why-icon" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Verified Local Resources</h4><p class="why-zh">真实本地资源</p><p>Every partner we introduce has been personally visited and vetted. No paid directories. No blind introductions.</p></div>
-      <div class="why-card rv rv1"><div class="why-icon" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Market Insight</h4><p class="why-zh">本地市场洞察</p><p>Deep understanding of Thai consumer behavior, competitive dynamics, and regulations — strategy based on data, not assumptions.</p></div>
-      <div class="why-card rv rv2"><div class="why-icon" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="12" r="1.5" fill="currentColor" opacity=".6"/><circle cx="15" cy="12" r="1.5" fill="currentColor" opacity=".6"/><path d="M9 16l2-2 2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h4>AI-Assisted Workflow</h4><p class="why-zh">AI 提升效率</p><p>We embed AI into research, documentation, and workflow — delivering faster intelligence and smoother operations.</p></div>
-      <div class="why-card rv rv3"><div class="why-icon" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2l3 6 6.5 1-4.7 4.6 1.1 6.4-5.9-3.1-5.9 3.1 1.1-6.4L2.5 9 9 8l3-6z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Long-Term Partnership</h4><p class="why-zh">长期合作</p><p>Market entry is just the beginning. We stay embedded as your local operating team — optimizing and scaling for years.</p></div>
+      <div class="why-card rv"><div class="why-icon" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Verified Local Resources</h4><p class="why-zh">真实本地资源</p><p>Every partner we introduce has been personally visited and vetted. No paid directories. No blind introductions.<br>我们介绍的每一个合作伙伴都经过实地考察和验证。没有付费目录，没有盲目推荐。</p></div>
+      <div class="why-card rv rv1"><div class="why-icon" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Market Insight</h4><p class="why-zh">本地市场洞察</p><p>Deep understanding of Thai consumer behavior, competitive dynamics, and regulations — strategy based on data, not assumptions.<br>深度理解泰国消费者行为、竞争格局和法规——策略基于数据，而非假设。</p></div>
+      <div class="why-card rv rv2"><div class="why-icon" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/><circle cx="9" cy="12" r="1.5" fill="currentColor" opacity=".6"/><circle cx="15" cy="12" r="1.5" fill="currentColor" opacity=".6"/><path d="M9 16l2-2 2 2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div><h4>AI-Assisted Workflow</h4><p class="why-zh">AI 提升效率</p><p>We embed AI into research, documentation, and workflow — delivering faster intelligence and smoother operations.<br>我们将 AI 深度嵌入研究、文档和工作流——提供更快的情报和更顺畅的运营。</p></div>
+      <div class="why-card rv rv3"><div class="why-icon" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="18" height="18" fill="none" viewBox="0 0 24 24"><path d="M12 2l3 6 6.5 1-4.7 4.6 1.1 6.4-5.9-3.1-5.9 3.1 1.1-6.4L2.5 9 9 8l3-6z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Long-Term Partnership</h4><p class="why-zh">长期合作</p><p>Market entry is just the beginning. We stay embedded as your local operating team — optimizing and scaling for years.<br>进入市场只是开始。我们持续作为您的本地运营团队——逐年优化，逐年扩展。</p></div>
     </div>
   </div>
 </section>
 
 <section class="sec sec-alt" id="about">
   <div class="ctr">
-    <div class="sh rv"><div class="sk">About ThaiBridge</div><h2 class="st">Bridging China &amp; Thailand.</h2></div>
+    <div class="sh rv"><div class="sk">About ThaiBridge · 关于我们</div><h2 class="st">Bridging China &amp; Thailand.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">连接中国与泰国。</span></h2></div>
     <div class="about-block rv">
-      <p>We are a bilingual operations team <span class="hl">based in Bangkok, Thailand</span>. We understand Chinese business culture because we come from it. We understand Thai local reality because we live in it.<br><br>We don't sell reports. We don't charge for introductions. We earn trust through execution — personally vetting every partner, staying involved through every negotiation, and measuring ourselves by the results you achieve.<br><br><span class="hl">Our mission is not to become another agency. Our mission is to become your long-term local partner.</span></p>
+      <p>We are a bilingual operations team <span class="hl">based in Bangkok, Thailand</span>. We understand Chinese business culture because we come from it. We understand Thai local reality because we live in it.<br><br>我们是一支<span class="hl">常驻泰国曼谷</span>的双语运营团队。我们理解中国商业文化，因为我们来自那里。我们理解泰国本地现实，因为我们生活在这里。<br><br>We don't sell reports. We don't charge for introductions. We earn trust through execution — personally vetting every partner, staying involved through every negotiation, and measuring ourselves by the results you achieve.<br><br>我们不卖报告。我们不收介绍费。我们通过执行来赢得信任——亲自验证每一个合作伙伴，参与每一次谈判，用您取得的成果来衡量我们自己。<br><br><span class="hl">Our mission is not to become another agency. Our mission is to become your long-term local partner.</span><br><br><span class="hl">我们的使命不是成为又一家代理公司。我们的使命是成为您的长期本地合作伙伴。</span></p>
     </div>
     <div class="value-grid">
-      <div class="value-card rv"><div class="value-icon" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Trust</h4><p>Every introduction carries our reputation. If a partner isn't good enough for us, they'll never reach you.</p></div>
-      <div class="value-card rv rv1"><div class="value-icon" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Execution</h4><p>We measure ourselves by what gets done — not what gets recommended. Warehouses live. Creators posting. Partners contracted.</p></div>
-      <div class="value-card rv rv2"><div class="value-icon" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>China &times; Thailand</h4><p>Bilingual and bicultural. We don't just translate words — we translate business culture, expectations, and norms.</p></div>
+      <div class="value-card rv"><div class="value-icon" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>Trust · 信任</h4><p>Every introduction carries our reputation. If a partner isn't good enough for us, they'll never reach you.<br>每一次推荐都承载着我们的声誉。不适合我们的合作伙伴，永远不会被推荐给您。</p></div>
+      <div class="value-card rv rv1"><div class="value-icon" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h4>Execution · 执行</h4><p>We measure ourselves by what gets done — not what gets recommended. Warehouses live. Creators posting. Partners contracted.<br>我们以实际完成的结果来衡量自己——仓储运营中，达人发布中，合同签署中。</p></div>
+      <div class="value-card rv rv2"><div class="value-icon" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.6"/><ellipse cx="12" cy="12" rx="5" ry="10" stroke="currentColor" stroke-width="1.6"/><line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.6"/></svg></div><h4>China &times; Thailand · 中泰跨境</h4><p>Bilingual and bicultural. We don't just translate words — we translate business culture, expectations, and norms.<br>双语双文化。我们不仅翻译语言，更翻译商业文化、预期和规则。</p></div>
     </div>
   </div>
 </section>
 
 <section class="sec" id="contact">
   <div class="ctr">
-    <div class="sh rv"><div class="sk">Contact</div><h2 class="st">Start with a free<br>consultation.</h2><p class="ss">No commitment. No sales pitch. Just a real conversation about your goals.</p></div>
+    <div class="sh rv"><div class="sk">Contact · 联系我们</div><h2 class="st">Start with a free consultation.<br><span style="font-weight:400;font-size:60%;color:var(--t2);display:block;margin-top:10px">从免费咨询开始。</span></h2><p class="ss">No commitment. No sales pitch. Just a real conversation about your goals.<br>无需签约，不做推销。只是关于您目标的一次真实对话。</p></div>
     <div class="ct-l">
       <div class="rv"><div class="ct-g">
-        <div class="ct-c"><div class="ct-i2" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Email</div><div class="ct-vl2">contact@thaibridge.asia</div></div>
-        <div class="ct-c"><div class="ct-i2" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Website</div><div class="ct-vl2">thaibridge.asia</div></div>
-        <div class="ct-c"><div class="ct-i2" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">LINE / WeChat</div><div class="ct-vl2">Available for partners</div></div>
-        <div class="ct-c"><div class="ct-i2" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="ct-lb2">Hours</div><div class="ct-vl2">Mon–Fri, 9:00–18:00 ICT</div></div>
+        <div class="ct-c"><div class="ct-i2" style="background:rgba(200,169,81,.055);color:#C8A951"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 6 10-6" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Email · 邮箱</div><div class="ct-vl2">contact@thaibridge.asia</div></div>
+        <div class="ct-c"><div class="ct-i2" style="background:rgba(59,130,246,.055);color:#3B82F6"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M2 12h20" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">Website · 网站</div><div class="ct-vl2">thaibridge.asia</div></div>
+        <div class="ct-c"><div class="ct-i2" style="background:rgba(139,92,246,.055);color:#A78BFA"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="1.5"/></svg></div><div class="ct-lb2">LINE / WeChat · 微信</div><div class="ct-vl2">Available for partners · 合作后可加</div></div>
+        <div class="ct-c"><div class="ct-i2" style="background:rgba(6,182,212,.055);color:#22D3EE"><svg width="16" height="16" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></div><div class="ct-lb2">Hours · 工作时间</div><div class="ct-vl2">Mon–Fri, 9:00–18:00 ICT</div></div>
       </div></div>
       <div class="ct-p rv rv1">
-        <h3>Start Your Market Entry Plan</h3>
-        <p class="dsc">Tell us about your brand and what you want to achieve. We'll prepare a tailored assessment — at no cost — within 24 hours.</p>
-        <p class="live"><span class="live-d"></span> Based in Bangkok. Available now.</p>
-        <div class="ct-btns"><a href="mailto:contact@thaibridge.asia" class="btn btn-gold">Start the Conversation <span>&rarr;</span></a><a href="contact.html" class="btn btn-ghost">View Contact Page</a></div>
+        <h3>Ready to Start?<br>准备好开始了吗？</h3>
+        <p class="dsc">Tell us about your brand. We'll prepare a tailored Thailand market assessment — at zero cost — within 24 hours. No pitch. No commitment. Just real advice from someone on the ground.<br><br><span style="font-size:13px;color:var(--t2)">告诉我们您的品牌情况。我们将在24小时内为您准备一份定制化的泰国市场评估——完全免费。没有推销，没有强制签约。只有来自曼谷本地的真实建议。</span></p>
+        <p class="live"><span class="live-d"></span> Based in Bangkok. Available now. 曼谷本地 · 现在可约</p>
+        <div class="ct-btns"><a href="mailto:contact@thaibridge.asia" class="btn btn-gold">Start the Conversation · 开始对话 <span style="font-size:17px">&rarr;</span></a><a href="contact.html" class="btn btn-ghost">View Contact Page · 联系方式</a></div>
       </div>
     </div>
   </div>
@@ -356,12 +493,12 @@
 <footer>
   <div class="ft-i">
     <div class="ft-t">
-      <div><div class="ft-B"><span class="ft-M">TB</span>ThaiBridge</div><p class="ft-desc">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.</p></div>
-      <div><div class="ft-h">Pages</div><div class="ft-l"><a href="index.html">Home</a><a href="services.html">Services</a><a href="process.html">Process</a><a href="about.html">About</a><a href="contact.html">Contact</a></div></div>
-      <div><div class="ft-h">Services</div><div class="ft-l"><a href="services.html">Warehouse</a><a href="services.html">Creator Network</a><a href="services.html">Business Matching</a><a href="services.html">Market Research</a></div></div>
-      <div><div class="ft-h">Contact</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat</a></div></div>
+      <div><div class="ft-B"><span class="ft-M">TB</span>ThaiBridge</div><p class="ft-desc">Your local team in Thailand. No middlemen. No guesswork. Just real execution — by people on the ground in Bangkok.<br><br>您的泰国本地团队。零中介，零猜测。只有真实执行——由曼谷本地团队完成。</p></div>
+      <div><div class="ft-h">Pages · 页面</div><div class="ft-l"><a href="index.html">Home · 首页</a><a href="services.html">Services · 服务</a><a href="process.html">Process · 流程</a><a href="about.html">About · 关于</a><a href="contact.html">Contact · 联系</a></div></div>
+      <div><div class="ft-h">Services · 服务</div><div class="ft-l"><a href="services.html">Warehouse · 仓储</a><a href="services.html">Creator Network · 达人网络</a><a href="services.html">Business Matching · 商业对接</a><a href="services.html">Market Research · 市场研究</a></div></div>
+      <div><div class="ft-h">Contact · 联系</div><div class="ft-l"><a href="mailto:contact@thaibridge.asia">contact@thaibridge.asia</a><a href="https://thaibridge.asia">thaibridge.asia</a><a href="#">LinkedIn</a><a href="#">WeChat · 微信</a></div></div>
     </div>
-    <div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved.</span><span>Bangkok, Thailand</span></div>
+    <div class="ft-x"><span>&copy; 2026 ThaiBridge. All rights reserved. · 版权所有</span><span>Bangkok, Thailand · 泰国曼谷</span></div>
   </div>
 </footer>
 
